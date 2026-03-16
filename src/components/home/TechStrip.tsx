@@ -9,8 +9,8 @@ export default function TechStrip() {
     <section className="relative mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Stack"
-        title="Technologies We Work With"
-        description="Modern tools and frameworks powering our agency projects and studio ventures."
+        title="Technologies I Work With"
+        description="Modern tools and frameworks powering my agency projects and studio ventures."
       />
 
       <motion.div

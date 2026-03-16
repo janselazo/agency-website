@@ -28,15 +28,10 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      {/* Scanning top border */}
-      {scrolled && (
-        <div className="absolute bottom-0 left-0 right-0 h-px animate-border-scan" />
-      )}
-
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="group flex items-center gap-1">
           <span className="font-mono text-lg font-bold tracking-tight text-text-primary transition-all group-hover:glow-text-blue">
-            zenpho
+            Janse Lazo
           </span>
           <span className="font-mono text-lg font-bold text-accent animate-pulse-glow">
             _

@@ -8,7 +8,7 @@ import CTASection from "@/components/home/CTASection";
 export const metadata: Metadata = {
   title: "Agency",
   description:
-    "Zenpho Agency — AI-powered software development for startups and enterprises. From MVPs to production-scale platforms.",
+    "Janse Lazo — AI-powered software development and growth for B2B & B2C SaaS startups. From MVPs to production-scale platforms.",
 };
 
 export default function AgencyPage() {

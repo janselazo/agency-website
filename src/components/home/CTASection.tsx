@@ -33,7 +33,7 @@ export default function CTASection() {
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm text-text-secondary">
             Whether you need a development partner or want to explore a
-            collaboration, we&apos;d love to hear from you.
+            collaboration, I&apos;d love to hear from you.
           </p>
           <div className="mt-8">
             <Button href="/contact" variant="primary" size="lg">

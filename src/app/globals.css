@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #020408;
+  --color-background: #050a12;
   --color-surface: #060C18;
   --color-surface-light: #0A1628;
   --color-border: #0E2A4A;
@@ -35,22 +35,22 @@ body {
   scrollbar-color: #0E2A4A transparent;
 }
 
-/* ── Sci-fi grid background ── */
+/* ── Subtle grid background ── */
 .scifi-grid {
   background-image:
-    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0, 212, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.02) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
 .scifi-grid-dense {
   background-image:
-    linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px);
   background-size: 30px 30px;
 }
 
-/* ── Scanline overlay ── */
+/* ── Scanline overlay (subtle, optional) ── */
 .scanlines::after {
   content: "";
   position: absolute;
@@ -59,9 +59,9 @@ body {
   background: repeating-linear-gradient(
     0deg,
     transparent,
-    transparent 2px,
-    rgba(0, 212, 255, 0.01) 2px,
-    rgba(0, 212, 255, 0.01) 4px
+    transparent 4px,
+    rgba(0, 212, 255, 0.005) 4px,
+    rgba(0, 212, 255, 0.005) 8px
   );
   z-index: 1;
 }
@@ -82,11 +82,11 @@ body {
 }
 
 .glow-text-blue {
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5), 0 0 60px rgba(0, 212, 255, 0.2);
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(0, 212, 255, 0.1);
 }
 
 .glow-text-green {
-  text-shadow: 0 0 20px rgba(0, 255, 136, 0.5), 0 0 60px rgba(0, 255, 136, 0.2);
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.3), 0 0 40px rgba(0, 255, 136, 0.1);
 }
 
 /* ── Keyframe animations ── */

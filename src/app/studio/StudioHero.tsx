@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 export default function StudioHero() {
   return (
-    <section className="scanlines relative flex min-h-[80vh] items-center justify-center overflow-hidden pt-24">
-      <div className="absolute inset-0 scifi-grid" />
+    <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden pt-24">
 
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute right-1/4 top-1/4 h-96 w-96 rounded-full bg-accent-violet/5 blur-[100px]" />
@@ -30,10 +29,10 @@ export default function StudioHero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl font-bold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          We don&apos;t just build for others.
+          I don&apos;t just build for others.
           <br />
           <span className="glow-text-green bg-gradient-to-r from-accent-violet to-accent bg-clip-text text-transparent">
-            We build what&apos;s next.
+            I build what&apos;s next.
           </span>
         </motion.h1>
 
@@ -43,9 +42,9 @@ export default function StudioHero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mx-auto mt-6 max-w-2xl font-mono text-sm leading-relaxed text-text-secondary"
         >
-          {"> "}Zenpho Studio identifies breakthrough opportunities at the
-          intersection of AI and underserved markets, then builds focused products
-          with small, world-class teams.
+          {"> "}I identify breakthrough opportunities at the intersection of AI and
+          underserved markets, then build focused products with small, world-class
+          teams.
         </motion.p>
 
         <motion.div

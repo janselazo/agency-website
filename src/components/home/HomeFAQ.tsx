@@ -6,32 +6,32 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const faqs = [
   {
-    q: "What is Zenpho?",
-    a: "Zenpho is an AI development agency and startup venture studio. We help clients build intelligent software through our agency arm, and we create our own AI-powered products through our studio.",
+    q: "Who is Janse Lazo?",
+    a: "I'm a builder and advisor focused on AI Growth and Development. I help B2B and B2C SaaS startups through my agency work — advising and building for clients — and I create my own AI-powered products through my studio.",
   },
   {
     q: "What's the difference between the Agency and the Studio?",
-    a: "The Agency works with external clients — startups, scale-ups, and enterprises — to design, build, and ship custom software. The Studio is where we build our own products and ventures from scratch, tackling problems we've identified across industries.",
+    a: "The Agency is where I advise and build for external clients — startups and scale-ups. The Studio is where I build my own products and ventures from scratch, tackling problems I've identified across industries.",
   },
   {
     q: "What types of projects do you take on?",
-    a: "We specialize in AI-powered products, custom software platforms, MVPs, system modernization, and data engineering. If it involves building software with intelligence baked in, we're the right team.",
+    a: "I specialize in AI-powered products, custom software platforms, MVPs, system modernization, and data engineering for B2B and B2C SaaS startups. If it involves AI Software Development or AI Software Growth, I can help.",
   },
   {
     q: "How do you approach new projects?",
-    a: "Every engagement starts with a Discovery phase where we understand your goals, users, and technical landscape. From there we design, build in agile sprints, and deploy — with growth mindset embedded from the very first decision.",
+    a: "Every engagement starts with a Discovery phase where I understand your goals, users, and technical landscape. From there we design, build in agile sprints, and deploy — with growth mindset embedded from the very first decision.",
   },
   {
     q: "Do you work with early-stage startups?",
-    a: "Absolutely. Many of our best partnerships started at the idea stage. We offer sprint-based engagements and MVP packages designed specifically for founders who need to move fast and validate quickly.",
+    a: "Absolutely. Many of my best partnerships started at the idea stage. I offer sprint-based engagements and MVP packages designed specifically for founders who need to move fast and validate quickly.",
   },
   {
     q: "Can I see your pricing?",
-    a: "Yes — we believe in transparent pricing. Visit our Services & Pricing page for detailed engagement models starting from $15K per sprint, monthly partnerships, and custom enterprise plans.",
+    a: "Yes — I believe in transparent pricing. Visit the Services & Pricing page for detailed engagement models starting from $15K per sprint, monthly partnerships, and custom enterprise plans.",
   },
   {
-    q: "Where is Zenpho based?",
-    a: "We're a remote-first team working across time zones. Our clients span from Silicon Valley to Europe to Latin America. We adapt our working hours to ensure seamless collaboration regardless of geography.",
+    q: "Where are you based?",
+    a: "I work remotely across time zones. My clients span from Silicon Valley to Europe to Latin America. I adapt my working hours to ensure seamless collaboration regardless of geography.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function HomeFAQ() {
       <SectionHeading
         label="FAQ"
         title="Frequently Asked Questions"
-        description="Everything you need to know about working with Zenpho."
+        description="Everything you need to know about working with Janse Lazo."
       />
 
       <div className="mx-auto max-w-3xl space-y-4">

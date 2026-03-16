@@ -1,30 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
-const geistSans = Geist({
+const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
+const jetbrainsMono = JetBrains_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Zenpho — AI Development Agency & Startup Venture Studio",
-    template: "%s | Zenpho",
+    default: "Janse Lazo — AI Growth & Development",
+    template: "%s | Janse Lazo",
   },
   description:
-    "We build intelligent software for clients and launch our own AI-powered ventures. Agency services and studio products, all under one roof.",
+    "I help B2B and B2C SaaS startups build and scale with AI. AI Software Development and AI Software Growth — building ventures and advising clients.",
   openGraph: {
-    title: "Zenpho — AI Development Agency & Startup Venture Studio",
+    title: "Janse Lazo — AI Growth & Development",
     description:
-      "We build intelligent software for clients and launch our own AI-powered ventures.",
+      "I help B2B and B2C SaaS startups build and scale with AI. AI Software Development and AI Software Growth.",
     type: "website",
     locale: "en_US",
   },
@@ -38,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} min-h-screen bg-background font-sans text-foreground antialiased`}
       >
         <div className="relative">
           <Navbar />

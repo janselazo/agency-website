@@ -8,7 +8,7 @@ import CTASection from "@/components/home/CTASection";
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "Our growth-first methodology — built from 8+ years of delivering software solutions. Growth mindset embedded from the very first line of code.",
+    "My growth-first methodology — built from 8+ years of delivering software solutions. Growth mindset embedded from the very first line of code.",
 };
 
 export default function MethodologyPage() {

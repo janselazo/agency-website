@@ -33,6 +33,16 @@ export interface FeaturedProject {
   result?: string;
 }
 
+export interface PortfolioProject {
+  title: string;
+  description: string;
+  tags: string[];
+  type: "studio" | "agency";
+  status?: "live" | "beta" | "building" | "research";
+  result?: string;
+  metrics?: string;
+}
+
 export interface MethodologyPillar {
   number: string;
   title: string;
@@ -218,6 +228,61 @@ export const techStack: TechItem[] = [
   { name: "Supabase", category: "Backend" },
 ];
 
+export const portfolioProjects: PortfolioProject[] = [
+  // Studio ventures (building)
+  {
+    title: "Cortex",
+    description:
+      "An AI-powered knowledge management platform that learns from your team's collective intelligence. Cortex indexes conversations, documents, and code to surface answers instantly — reducing onboarding time by 60% and eliminating knowledge silos.",
+    tags: ["Productivity", "AI"],
+    type: "studio",
+    status: "beta",
+    metrics: "2,400+ beta users across 35 teams",
+  },
+  {
+    title: "Synth",
+    description:
+      "Automated content generation pipeline for brands, powered by multimodal AI models. Synth produces blog posts, social media, video scripts, and visual assets — maintaining brand voice across channels while reducing content production cost by 70%.",
+    tags: ["AI", "Content", "SaaS"],
+    type: "studio",
+    status: "live",
+    metrics: "150+ brands, 1M+ pieces of content generated",
+  },
+  {
+    title: "Nuro",
+    description:
+      "Intelligent workflow automation that adapts to your business processes in real time. Nuro observes how your team works, identifies bottlenecks, and autonomously optimizes operations — no complex rule-building required.",
+    tags: ["Automation", "AI"],
+    type: "studio",
+    status: "building",
+  },
+  {
+    title: "Axiom",
+    description:
+      "Next-generation data analytics platform with natural language querying and AI-driven insights. Axiom lets non-technical teams explore complex datasets through conversation, democratizing data access across the organization.",
+    tags: ["Data", "Analytics", "AI"],
+    type: "studio",
+    status: "research",
+  },
+  // Agency projects (advising)
+  {
+    title: "AI-Powered Legal Assistant",
+    description:
+      "Built a document analysis platform that reduced contract review time by 80% for a top-tier law firm. The system processes thousands of legal documents using fine-tuned LLMs and surfaces key clauses, risks, and obligations in seconds.",
+    tags: ["NLP", "LLM", "React", "Python"],
+    type: "agency",
+    result: "80% reduction in review time",
+  },
+  {
+    title: "Predictive Analytics Dashboard",
+    description:
+      "Real-time analytics platform with ML-driven forecasting for a Series B fintech startup. Enabled the team to anticipate market shifts 3 weeks ahead of traditional models.",
+    tags: ["ML", "Data", "Next.js", "AWS"],
+    type: "agency",
+    result: "3-week forecasting advantage",
+  },
+];
+
 export const featuredProjects: FeaturedProject[] = [
   {
     title: "AI-Powered Legal Assistant",
@@ -230,7 +295,7 @@ export const featuredProjects: FeaturedProject[] = [
   {
     title: "Synth — Content Engine",
     description:
-      "Our studio product automating multi-channel content creation for brands at scale. From blog posts to social media to video scripts — all maintaining consistent brand voice.",
+      "My studio product automating multi-channel content creation for brands at scale. From blog posts to social media to video scripts — all maintaining consistent brand voice.",
     tags: ["AI", "Automation", "SaaS"],
     type: "studio",
     result: "150+ brands onboarded",
@@ -445,7 +510,7 @@ The architecture supported this expansion because we'd designed for it from the 
 
 Your tech stack is a tool. Your growth mindset is a strategy. Invest in architecture that bends, teams that learn, and processes that compound improvements over time.
 
-That's the Zenpho way.`,
+That's my approach.`,
   },
   {
     slug: "ai-agents-practical-guide",
@@ -498,7 +563,7 @@ The companies winning with AI agents in 2026 are the ones treating them as engin
     date: "2026-02-05",
     readTime: "5 min read",
     category: "Startups",
-    content: `We've built 50+ MVPs at Zenpho. Some became funded startups. Some pivoted into something better. A few didn't make it. The difference almost never comes down to the idea — it comes down to execution.
+    content: `I've built 50+ MVPs. Some became funded startups. Some pivoted into something better. A few didn't make it. The difference almost never comes down to the idea — it comes down to execution.
 
 ## Mistake #1: Building Too Much
 
@@ -534,9 +599,9 @@ Building an MVP is an exercise in disciplined restraint. Build less, learn more,
   },
   {
     slug: "building-studio-ventures",
-    title: "Inside Zenpho Studio: How We Choose What to Build",
+    title: "Inside My Studio: How I Choose What to Build",
     excerpt:
-      "A behind-the-scenes look at how our venture studio identifies opportunities, validates ideas, and goes from concept to product.",
+      "A behind-the-scenes look at how I identify opportunities, validate ideas, and go from concept to product.",
     date: "2026-01-20",
     readTime: "7 min read",
     category: "Studio",
@@ -577,7 +642,7 @@ Once an idea passes the filter, we follow a structured process:
 - **Nuro** (Building) — born from the repetitive workflow problems we saw across logistics clients
 - **Axiom** (Research) — born from the gap between data teams and business teams in every organization
 
-The studio isn't a side project — it's the future of Zenpho. Every venture we launch adds to our thesis that AI will reshape every industry, one workflow at a time.`,
+The studio isn't a side project — it's core to my work. Every venture I launch adds to my thesis that AI will reshape every industry, one workflow at a time.`,
   },
   {
     slug: "technical-debt-startup-guide",
@@ -597,7 +662,7 @@ The studio isn't a side project — it's the future of Zenpho. Every venture we 
 
 ## The Framework We Use
 
-At Zenpho, we categorize debt into four buckets:
+I categorize debt into four buckets:
 
 **1. Architecture debt** — Structural decisions that limit future capabilities. High impact, high cost to fix. Address before it blocks a critical initiative.
 
@@ -622,6 +687,7 @@ Technical debt is a tool, not a failure. The founders and teams who manage it in
 export const navLinks = [
   { label: "Agency", href: "/agency" },
   { label: "Studio", href: "/studio" },
+  { label: "Portfolio", href: "/portfolio" },
   { label: "Methodology", href: "/methodology" },
   { label: "Services", href: "/services" },
   { label: "Blog", href: "/blog" },

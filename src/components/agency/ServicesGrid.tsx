@@ -43,7 +43,7 @@ export default function ServicesGrid() {
     <section className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Services"
-        title="What We Build"
+        title="What I Build"
         description="Full-spectrum development services powered by AI and modern engineering practices. Every engagement is tailored to your stage and goals."
       />
 

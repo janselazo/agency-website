@@ -13,7 +13,7 @@ export default function CaseStudies() {
       <SectionHeading
         label="Results"
         title="Proven Impact"
-        description="Real outcomes from real engagements. We measure success by the value delivered to our clients."
+        description="Real outcomes from real engagements. I measure success by the value delivered to my clients."
       />
 
       <div className="grid gap-8 lg:grid-cols-2">

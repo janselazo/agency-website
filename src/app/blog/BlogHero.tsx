@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 export default function BlogHero() {
   return (
-    <section className="scanlines relative overflow-hidden px-6 pb-16 pt-40">
-      <div className="absolute inset-0 scifi-grid" />
-
+    <section className="relative overflow-hidden px-6 pb-16 pt-40">
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <motion.span
           initial={{ opacity: 0, y: 20 }}

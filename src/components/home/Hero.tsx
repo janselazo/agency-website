@@ -15,13 +15,12 @@ const clients = [
 
 export default function Hero() {
   return (
-    <section className="scanlines relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/4 top-1/3 h-[500px] w-[500px] rounded-full bg-accent/5 blur-[120px]" />
         <div className="absolute bottom-1/4 right-1/4 h-[400px] w-[400px] rounded-full bg-accent-violet/5 blur-[120px]" />
       </div>
 
-      <div className="absolute inset-0 scifi-grid" />
 
       <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
         <motion.div
@@ -31,7 +30,7 @@ export default function Hero() {
         >
           <span className="mb-6 inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.3em] text-accent">
             <span className="inline-block h-px w-8 bg-accent/50" />
-            AI Development &middot; Venture Studio
+            AI Growth &amp; Development
             <span className="inline-block h-px w-8 bg-accent/50" />
           </span>
         </motion.div>
@@ -42,7 +41,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.15 }}
           className="text-5xl font-bold leading-[1.1] tracking-tight text-text-primary sm:text-7xl lg:text-8xl"
         >
-          We build and scale
+          I build and scale
           <br />
           <span className="glow-text-blue bg-gradient-to-r from-accent via-blue-400 to-accent-violet bg-clip-text text-transparent">
             software companies
@@ -55,8 +54,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mx-auto mt-6 max-w-lg font-mono text-sm leading-relaxed text-text-secondary"
         >
-          {"> "}AI-powered development for clients. Our own ventures built
-          in-house.
+          {"> "}AI Software Development and AI Software Growth for B2B &amp; B2C
+          SaaS startups. Building ventures. Advising clients.
         </motion.p>
 
         <motion.div
@@ -106,7 +105,7 @@ export default function Hero() {
           className="mt-16"
         >
           <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.3em] text-text-secondary/50">
-            Companies we&apos;ve worked with
+            Companies I&apos;ve worked with
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {clients.map((client) => (

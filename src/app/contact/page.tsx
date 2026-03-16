@@ -5,7 +5,7 @@ import ContactForm from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Zenpho. Whether you need a development partner or want to explore a collaboration.",
+    "Get in touch with Janse Lazo. Whether you need a development partner or want to explore a collaboration on AI Growth & Development.",
 };
 
 export default function ContactPage() {
@@ -25,10 +25,10 @@ export default function ContactPage() {
                   Email
                 </h3>
                 <a
-                  href="mailto:hello@zenpho.dev"
+                  href="mailto:hello@janselazo.com"
                   className="text-text-primary transition-colors hover:text-accent"
                 >
-                  hello@zenpho.dev
+                  hello@janselazo.com
                 </a>
               </div>
 
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="flex flex-col gap-2">
                   <a
-                    href="https://x.com/zenpho"
+                    href="https://x.com/janselazo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-text-primary transition-colors hover:text-accent"
@@ -46,7 +46,7 @@ export default function ContactPage() {
                     X / Twitter
                   </a>
                   <a
-                    href="https://github.com/zenpho"
+                    href="https://github.com/janselazo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-text-primary transition-colors hover:text-accent"
@@ -54,7 +54,7 @@ export default function ContactPage() {
                     GitHub
                   </a>
                   <a
-                    href="https://linkedin.com/company/zenpho"
+                    href="https://linkedin.com/in/janselazo"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-text-primary transition-colors hover:text-accent"
@@ -69,7 +69,7 @@ export default function ContactPage() {
                   Response time
                 </h3>
                 <p className="text-sm text-text-secondary">
-                  We typically respond within 24 hours on business days.
+                  I typically respond within 24 hours on business days.
                 </p>
               </div>
             </div>

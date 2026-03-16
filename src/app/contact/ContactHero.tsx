@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 export default function ContactHero() {
   return (
-    <section className="scanlines relative overflow-hidden px-6 pb-16 pt-40">
-      <div className="absolute inset-0 scifi-grid" />
-
+    <section className="relative overflow-hidden px-6 pb-16 pt-40">
       <div className="relative z-10 mx-auto max-w-3xl text-center">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +32,7 @@ export default function ContactHero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mx-auto mt-4 max-w-xl font-mono text-sm text-text-secondary"
         >
-          {"> "}Have a project in mind? Drop us a line.
+          {"> "}Have a project in mind? Drop me a line.
         </motion.p>
       </div>
     </section>

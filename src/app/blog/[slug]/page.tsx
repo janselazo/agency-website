@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: Props) {
             Want to discuss this topic?
           </p>
           <p className="mt-2 text-sm text-text-secondary">
-            We love talking shop. Reach out and let&apos;s explore how these
+            I love talking shop. Reach out and let&apos;s explore how these
             ideas apply to your project.
           </p>
           <Link

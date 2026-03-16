@@ -5,8 +5,7 @@ import { experienceStats } from "@/lib/data";
 
 export default function MethodologyHero() {
   return (
-    <section className="scanlines relative flex min-h-[80vh] items-center justify-center overflow-hidden pt-24">
-      <div className="absolute inset-0 scifi-grid" />
+    <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden pt-24">
 
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/3 top-1/4 h-96 w-96 rounded-full bg-accent/5 blur-[100px]" />
@@ -45,7 +44,7 @@ export default function MethodologyHero() {
           className="mx-auto mt-6 max-w-2xl font-mono text-sm leading-relaxed text-text-secondary"
         >
           {"> "}With over 8 years building software solutions across industries,
-          we&apos;ve developed a methodology that treats growth not as an afterthought,
+          I&apos;ve developed a methodology that treats growth not as an afterthought,
           but as a core architectural principle.
         </motion.p>
 

@@ -3,23 +3,21 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="relative border-t border-accent/10 bg-background">
-      <div className="absolute top-0 left-0 right-0 h-px animate-border-scan" />
-
       <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <Link href="/" className="group flex items-center gap-1">
               <span className="font-mono text-lg font-bold tracking-tight text-text-primary">
-                zenpho
+                Janse Lazo
               </span>
               <span className="font-mono text-lg font-bold text-accent animate-pulse-glow">
                 _
               </span>
             </Link>
             <p className="mt-3 max-w-xs font-mono text-xs leading-relaxed text-text-secondary">
-              {"> "}AI Development Agency & Startup Venture Studio.
+              {"> "}AI Growth & Development for B2B & B2C SaaS startups.
               <br />
-              {"> "}Building intelligent software. Launching ventures.
+              {"> "}Building ventures. Advising clients.
             </p>
           </div>
 
@@ -32,6 +30,7 @@ export default function Footer() {
               {[
                 { label: "Agency", href: "/agency" },
                 { label: "Studio", href: "/studio" },
+                { label: "Portfolio", href: "/portfolio" },
                 { label: "Methodology", href: "/methodology" },
                 { label: "Services", href: "/services" },
                 { label: "Blog", href: "/blog" },
@@ -55,13 +54,13 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:hello@zenpho.dev"
+                href="mailto:hello@janselazo.com"
                 className="font-mono text-xs text-text-secondary transition-colors hover:text-accent"
               >
-                hello@zenpho.dev
+                hello@janselazo.com
               </a>
               <a
-                href="https://x.com/zenpho"
+                href="https://x.com/janselazo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-xs text-text-secondary transition-colors hover:text-accent"
@@ -69,12 +68,20 @@ export default function Footer() {
                 X / Twitter
               </a>
               <a
-                href="https://github.com/zenpho"
+                href="https://github.com/janselazo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-mono text-xs text-text-secondary transition-colors hover:text-accent"
               >
                 GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/janselazo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-xs text-text-secondary transition-colors hover:text-accent"
+              >
+                LinkedIn
               </a>
             </div>
           </div>
@@ -82,8 +89,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-accent/10 pt-8">
           <p className="text-center font-mono text-[10px] tracking-widest text-text-secondary/50">
-            &copy; {new Date().getFullYear()} ZENPHO // ALL RIGHTS RESERVED //
-            SYSTEM v2.0
+            &copy; {new Date().getFullYear()} Janse Lazo. All rights reserved.
           </p>
         </div>
       </div>

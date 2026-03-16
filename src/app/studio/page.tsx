@@ -7,7 +7,7 @@ import CTASection from "@/components/home/CTASection";
 export const metadata: Metadata = {
   title: "Studio",
   description:
-    "Zenpho Studio — We identify high-potential opportunities and build our own AI-powered products from the ground up.",
+    "Janse Lazo Studio — I identify high-potential opportunities and build AI-powered products from the ground up.",
 };
 
 export default function StudioPage() {

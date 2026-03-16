@@ -32,11 +32,11 @@ export default function SplitIntro() {
             <h3 className="text-2xl font-bold text-text-primary lg:text-3xl">
               Your vision,
               <br />
-              our engineering.
+              my engineering.
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-              We partner with startups and enterprises to design, build, and ship
-              AI-powered software. From MVPs to production-scale platforms, we
+              I partner with B2B and B2C SaaS startups to design, build, and ship
+              AI-powered software. From MVPs to production-scale platforms, I
               bring technical depth and velocity.
             </p>
             <div className="mt-8">
@@ -61,12 +61,12 @@ export default function SplitIntro() {
               Studio
             </span>
             <h3 className="text-2xl font-bold text-text-primary lg:text-3xl">
-              Our ideas,
+              My ideas,
               <br />
               built & launched.
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-              We identify high-potential opportunities and build our own products
+              I identify high-potential opportunities and build my own products
               from the ground up. Each venture is designed, developed, and operated
               in-house.
             </p>

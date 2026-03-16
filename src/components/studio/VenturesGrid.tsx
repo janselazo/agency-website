@@ -11,8 +11,8 @@ export default function VenturesGrid() {
     <section id="ventures" className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Ventures"
-        title="What We're Building"
-        description="Products born from our conviction that AI will reshape every industry. Each venture operates with startup-level autonomy backed by studio-level resources."
+        title="What I'm Building"
+        description="Products born from my conviction that AI will reshape every industry. Each venture operates with startup-level autonomy."
       />
 
       <div className="grid gap-6 sm:grid-cols-2">

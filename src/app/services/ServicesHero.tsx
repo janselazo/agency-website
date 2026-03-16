@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 export default function ServicesHero() {
   return (
-    <section className="scanlines relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-24">
-      <div className="absolute inset-0 scifi-grid" />
-
+    <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden pt-24">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/4 top-1/3 h-80 w-80 rounded-full bg-accent/5 blur-[100px]" />
         <div className="absolute bottom-1/4 right-1/4 h-72 w-72 rounded-full bg-accent-violet/5 blur-[100px]" />
