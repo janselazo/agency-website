@@ -33,11 +33,20 @@ export interface FeaturedProject {
   result?: string;
 }
 
+export type ProjectCategory =
+  | "mobile-app"
+  | "web-app"
+  | "ai-agent"
+  | "saas-platform"
+  | "data-platform"
+  | "automation";
+
 export interface PortfolioProject {
   title: string;
   description: string;
   tags: string[];
   type: "studio" | "agency";
+  category: ProjectCategory;
   status?: "live" | "beta" | "building" | "research";
   result?: string;
   metrics?: string;
@@ -96,7 +105,7 @@ export const services: Service[] = [
   {
     title: "MVP & Rapid Prototyping",
     description:
-      "Validate your ideas fast. We go from concept to working product in weeks, not months.",
+      "Validate your ideas fast. I go from concept to working product in weeks, not months.",
     details: [
       "Market validation and technical feasibility",
       "Interactive prototypes and user testing",
@@ -148,13 +157,13 @@ export const processSteps: ProcessStep[] = [
     number: "01",
     title: "Discovery",
     description:
-      "We immerse ourselves in your domain — understanding the problem space, user needs, and business goals. This phase sets the foundation for every decision ahead.",
+      "I immerse myself in your domain — understanding the problem space, user needs, and business goals. This phase sets the foundation for every decision ahead.",
   },
   {
     number: "02",
     title: "Design & Architect",
     description:
-      "System architecture, data models, and UX flows designed for scalability. We think in terms of growth from the very first wireframe.",
+      "System architecture, data models, and UX flows designed for scalability. I think in terms of growth from the very first wireframe.",
   },
   {
     number: "03",
@@ -236,6 +245,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "An AI-powered knowledge management platform that learns from your team's collective intelligence. Cortex indexes conversations, documents, and code to surface answers instantly — reducing onboarding time by 60% and eliminating knowledge silos.",
     tags: ["Productivity", "AI"],
     type: "studio",
+    category: "web-app",
     status: "beta",
     metrics: "2,400+ beta users across 35 teams",
   },
@@ -245,6 +255,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Automated content generation pipeline for brands, powered by multimodal AI models. Synth produces blog posts, social media, video scripts, and visual assets — maintaining brand voice across channels while reducing content production cost by 70%.",
     tags: ["AI", "Content", "SaaS"],
     type: "studio",
+    category: "saas-platform",
     status: "live",
     metrics: "150+ brands, 1M+ pieces of content generated",
   },
@@ -254,6 +265,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Intelligent workflow automation that adapts to your business processes in real time. Nuro observes how your team works, identifies bottlenecks, and autonomously optimizes operations — no complex rule-building required.",
     tags: ["Automation", "AI"],
     type: "studio",
+    category: "automation",
     status: "building",
   },
   {
@@ -262,6 +274,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Next-generation data analytics platform with natural language querying and AI-driven insights. Axiom lets non-technical teams explore complex datasets through conversation, democratizing data access across the organization.",
     tags: ["Data", "Analytics", "AI"],
     type: "studio",
+    category: "data-platform",
     status: "research",
   },
   // Agency projects (advising)
@@ -271,6 +284,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Built a document analysis platform that reduced contract review time by 80% for a top-tier law firm. The system processes thousands of legal documents using fine-tuned LLMs and surfaces key clauses, risks, and obligations in seconds.",
     tags: ["NLP", "LLM", "React", "Python"],
     type: "agency",
+    category: "ai-agent",
     result: "80% reduction in review time",
   },
   {
@@ -279,6 +293,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Real-time analytics platform with ML-driven forecasting for a Series B fintech startup. Enabled the team to anticipate market shifts 3 weeks ahead of traditional models.",
     tags: ["ML", "Data", "Next.js", "AWS"],
     type: "agency",
+    category: "web-app",
     result: "3-week forecasting advantage",
   },
 ];
@@ -315,7 +330,7 @@ export const methodologyPillars: MethodologyPillar[] = [
     number: "01",
     title: "Growth-First Architecture",
     description:
-      "Every system we design is built to evolve. We don't over-engineer for hypothetical scale, but we architect with clear extension points so growth never requires a rewrite.",
+      "Every system I design is built to evolve. I don't over-engineer for hypothetical scale, but I architect with clear extension points so growth never requires a rewrite.",
     principles: [
       "Modular, composable system design",
       "Database schemas that accommodate future features",
@@ -327,7 +342,7 @@ export const methodologyPillars: MethodologyPillar[] = [
     number: "02",
     title: "Data-Driven Decisions",
     description:
-      "We embed analytics, monitoring, and feedback loops from the first sprint. Every feature ships with the instrumentation needed to measure its impact and inform the next iteration.",
+      "I embed analytics, monitoring, and feedback loops from the first sprint. Every feature ships with the instrumentation needed to measure its impact and inform the next iteration.",
     principles: [
       "Event tracking and user analytics built in",
       "A/B testing infrastructure from launch",
@@ -339,7 +354,7 @@ export const methodologyPillars: MethodologyPillar[] = [
     number: "03",
     title: "Lean Velocity",
     description:
-      "Speed matters, but not at the cost of quality. We ship the smallest meaningful increment, validate it with real users, and compound improvements over time.",
+      "Speed matters, but not at the cost of quality. I ship the smallest meaningful increment, validate it with real users, and compound improvements over time.",
     principles: [
       "2-week sprint cycles with weekly demos",
       "Continuous integration and deployment",
@@ -351,7 +366,7 @@ export const methodologyPillars: MethodologyPillar[] = [
     number: "04",
     title: "Team Empowerment",
     description:
-      "We don't just build and leave. Our engagements include knowledge transfer, documentation, and architecture decisions that your team can own and extend.",
+      "I don't just build and leave. My engagements include knowledge transfer, documentation, and architecture decisions that your team can own and extend.",
     principles: [
       "Pair programming and code reviews",
       "Comprehensive technical documentation",
@@ -370,99 +385,106 @@ export const experienceStats = [
 
 export const pricingTiers: PricingTier[] = [
   {
-    name: "Sprint",
+    name: "Advisory Call",
     description:
-      "Perfect for MVPs, proof-of-concepts, and time-boxed development sprints.",
-    price: "$15K",
-    priceNote: "per sprint (2 weeks)",
+      "One-time session to validate your idea, review your architecture, or get unstuck on a specific technical or growth challenge.",
+    price: "$500",
+    priceNote: "one-time",
     features: [
-      "Dedicated senior engineer",
-      "Daily standups and progress updates",
-      "Deployed working software every 2 weeks",
-      "Full source code ownership",
-      "Up to 80 development hours",
+      "90-minute deep-dive session",
+      "Technical or GTM focus — your choice",
+      "Written summary and action items",
+      "Follow-up via email",
     ],
     highlighted: false,
-    cta: "Start a Sprint",
+    cta: "Book a Call",
   },
   {
-    name: "Partnership",
+    name: "Product Development Advisory",
     description:
-      "Ongoing collaboration for teams building complex products that need sustained engineering power.",
-    price: "$25K",
+      "Ongoing technical advisory for founders building AI products. Architecture, stack decisions, and engineering velocity.",
+    price: "$3K",
     priceNote: "per month",
     features: [
-      "Dedicated team (2-3 engineers)",
-      "Technical lead and project management",
+      "Weekly 1:1 advisory sessions",
       "Architecture and code review",
-      "Weekly strategy sessions",
-      "Priority support and SLA",
-      "Scalable up or down monthly",
+      "Technical roadmap guidance",
+      "Unlimited async support",
+    ],
+    highlighted: false,
+    cta: "Get Started",
+  },
+  {
+    name: "Product Growth Advisory",
+    description:
+      "Ongoing growth and GTM advisory. Positioning, launch strategy, metrics, and scaling what works.",
+    price: "$3K",
+    priceNote: "per month",
+    features: [
+      "Weekly 1:1 advisory sessions",
+      "GTM and positioning strategy",
+      "Metrics and funnel optimization",
+      "Unlimited async support",
+    ],
+    highlighted: false,
+    cta: "Get Started",
+  },
+  {
+    name: "Full Partnership",
+    description:
+      "Combined product development and growth advisory. Best for founders who want end-to-end guidance.",
+    price: "$5K",
+    priceNote: "per month",
+    features: [
+      "Weekly 1:1 sessions (dev + growth)",
+      "Technical and GTM strategy",
+      "Architecture, code, and metrics review",
+      "Priority support and flexible scope",
     ],
     highlighted: true,
     cta: "Start a Partnership",
-  },
-  {
-    name: "Enterprise",
-    description:
-      "Full-scale engagements for organizations needing end-to-end AI transformation.",
-    price: "Custom",
-    priceNote: "tailored to scope",
-    features: [
-      "Full cross-functional team",
-      "AI strategy and roadmap development",
-      "Dedicated project manager",
-      "Custom SLAs and compliance",
-      "On-site workshops available",
-      "Long-term support and maintenance",
-    ],
-    highlighted: false,
-    cta: "Contact Us",
   },
 ];
 
 export const servicePackages: ServicePackage[] = [
   {
-    title: "AI Product Build",
+    title: "Product Development Advisory",
     description:
-      "End-to-end development of an AI-powered product — from model selection to production deployment.",
+      "Ongoing 1-on-1 advisory on building AI-powered products. Architecture, stack decisions, code reviews, and technical direction.",
     icon: "brain",
     deliverables: [
-      "AI/ML model development or integration",
-      "Full-stack application",
-      "API and data pipeline",
-      "Deployment and monitoring setup",
-      "Technical documentation",
+      "Weekly 1:1 advisory sessions",
+      "Architecture and code review",
+      "Technical roadmap guidance",
+      "Unlimited async support",
     ],
-    timeline: "8-16 weeks",
+    timeline: "Ongoing, monthly",
   },
   {
-    title: "MVP Launch",
+    title: "Product Growth Advisory",
     description:
-      "Go from idea to market-ready product in record time with our lean MVP process.",
+      "Ongoing 1-on-1 advisory on scaling AI products. Growth strategy, user acquisition, retention, and experiment design.",
     icon: "rocket",
     deliverables: [
-      "Product scoping and feature prioritization",
-      "UI/UX design and prototyping",
-      "Core feature development",
-      "Cloud deployment",
-      "Launch support",
+      "Weekly 1:1 advisory sessions",
+      "GTM and positioning strategy",
+      "Metrics and funnel optimization",
+      "Unlimited async support",
     ],
-    timeline: "4-8 weeks",
+    timeline: "Ongoing, monthly",
   },
   {
-    title: "System Modernization",
+    title: "Full Partnership",
     description:
-      "Migrate legacy systems to modern architectures with AI capabilities baked in.",
+      "Combined development and growth advisory. Fractional CTO/CGO-style engagement for end-to-end guidance.",
     icon: "zap",
     deliverables: [
-      "Architecture audit and migration plan",
-      "Incremental system migration",
-      "AI/automation integration",
-      "Performance optimization",
-      "Team training and handoff",
+      "Weekly 1:1 sessions (dev + growth)",
+      "Technical and GTM strategy",
+      "Architecture, code, and metrics review",
+      "Priority support and flexible scope",
     ],
-    timeline: "12-24 weeks",
+    timeline: "Ongoing, monthly",
   },
 ];
 
@@ -481,30 +503,30 @@ export const blogPosts: BlogPost[] = [
     slug: "why-growth-mindset-matters-in-software",
     title: "Why Growth Mindset Matters More Than Your Tech Stack",
     excerpt:
-      "The frameworks you choose matter less than how you architect for change. Here's how we embed growth thinking into every project from day one.",
+      "The frameworks you choose matter less than how you architect for change. Here's how I embed growth thinking into every project from day one.",
     date: "2026-03-01",
     readTime: "6 min read",
     category: "Methodology",
-    content: `The tech industry obsesses over stack choices. React vs. Vue. PostgreSQL vs. MongoDB. AWS vs. GCP. But after 8+ years of building software that scales, we've learned that the most important decision isn't which tools you pick — it's whether your architecture can evolve when your assumptions change.
+    content: `The tech industry obsesses over stack choices. React vs. Vue. PostgreSQL vs. MongoDB. AWS vs. GCP. But after 8+ years of building software that scales, I've learned that the most important decision isn't which tools you pick — it's whether your architecture can evolve when your assumptions change.
 
 ## The Growth Mindset in Engineering
 
 Growth mindset in software isn't about positive thinking. It's a concrete set of engineering practices:
 
 **1. Design for extension, not perfection.**
-Every module we build has clear boundaries and interfaces. When requirements change (and they always do), we extend rather than rewrite. This means modular architectures, well-defined APIs, and database schemas with room to breathe.
+Every module I build has clear boundaries and interfaces. When requirements change (and they always do), I extend rather than rewrite. This means modular architectures, well-defined APIs, and database schemas with room to breathe.
 
 **2. Instrument everything.**
-You can't improve what you can't measure. From the very first sprint, we bake in analytics, error tracking, and performance monitoring. This isn't overhead — it's the foundation for every future optimization.
+You can't improve what you can't measure. From the very first sprint, I bake in analytics, error tracking, and performance monitoring. This isn't overhead — it's the foundation for every future optimization.
 
 **3. Ship small, learn fast.**
-The biggest risk in software isn't a bug in production — it's building the wrong thing. We ship the smallest meaningful increment, measure its impact, and let data drive the next iteration.
+The biggest risk in software isn't a bug in production — it's building the wrong thing. I ship the smallest meaningful increment, measure its impact, and let data drive the next iteration.
 
 ## What This Looks Like in Practice
 
-When we built a legal AI platform for a top-tier law firm, we didn't try to automate everything at once. We started with contract clause extraction — one narrow, high-value use case. Within 3 weeks, lawyers were using it daily. Within 3 months, we'd expanded to risk analysis, obligation tracking, and multi-document comparison.
+When I built a legal AI platform for a top-tier law firm, I didn't try to automate everything at once. I started with contract clause extraction — one narrow, high-value use case. Within 3 weeks, lawyers were using it daily. Within 3 months, I'd expanded to risk analysis, obligation tracking, and multi-document comparison.
 
-The architecture supported this expansion because we'd designed for it from the start. Not by over-engineering, but by making extension cheap and safe.
+The architecture supported this expansion because I'd designed for it from the start. Not by over-engineering, but by making extension cheap and safe.
 
 ## The Takeaway
 
@@ -522,7 +544,7 @@ That's my approach.`,
     category: "AI Engineering",
     content: `AI agents are the most overhyped and most underestimated technology of 2026. The gap between demo-ware and production-ready agents is enormous — and most teams learn this the hard way.
 
-## What We've Learned from 20+ Deployments
+## What I've Learned from 20+ Deployments
 
 After shipping AI agents across legal, fintech, healthcare, and e-commerce, here are the patterns that actually work:
 
@@ -530,14 +552,14 @@ After shipping AI agents across legal, fintech, healthcare, and e-commerce, here
 The most successful agents do one thing exceptionally well. A contract review agent. An expense categorization agent. A customer support triage agent. Resist the temptation to build a "general purpose" agent.
 
 **Build guardrails before capabilities.**
-Every agent needs output validation, human-in-the-loop checkpoints, and fallback paths. The first thing we build isn't the agent — it's the safety net.
+Every agent needs output validation, human-in-the-loop checkpoints, and fallback paths. The first thing I build isn't the agent — it's the safety net.
 
 **Optimize for latency, not just accuracy.**
 A 98% accurate agent that responds in 2 seconds beats a 99.5% accurate agent that takes 30 seconds. Users will tolerate occasional errors far more than consistent slowness.
 
 ## The Architecture Pattern
 
-Our standard agent architecture looks like this:
+My standard agent architecture looks like this:
 
 1. **Intent classifier** — understands what the user is asking
 2. **Tool router** — selects the right tool/API for the task
@@ -545,7 +567,7 @@ Our standard agent architecture looks like this:
 4. **Output validator** — checks the result before returning to the user
 5. **Feedback loop** — logs everything for continuous improvement
 
-Each layer is independently testable, replaceable, and monitorable. When a new LLM drops, we swap the model — not the architecture.
+Each layer is independently testable, replaceable, and monitorable. When a new LLM drops, I swap the model — not the architecture.
 
 ## Common Pitfalls
 
@@ -559,7 +581,7 @@ The companies winning with AI agents in 2026 are the ones treating them as engin
     slug: "mvp-mistakes-founders-make",
     title: "5 MVP Mistakes That Kill Startups Before Launch",
     excerpt:
-      "Most MVPs fail not because of bad ideas, but because of bad execution. Here are the traps we see founders fall into — and how to avoid them.",
+      "Most MVPs fail not because of bad ideas, but because of bad execution. Here are the traps I see founders fall into — and how to avoid them.",
     date: "2026-02-05",
     readTime: "5 min read",
     category: "Startups",
@@ -567,7 +589,7 @@ The companies winning with AI agents in 2026 are the ones treating them as engin
 
 ## Mistake #1: Building Too Much
 
-The "minimum" in MVP exists for a reason. We regularly see founders with 30-feature specs for their "MVP." The result? Six months of development, a bloated product, and no market validation.
+The "minimum" in MVP exists for a reason. I regularly see founders with 30-feature specs for their "MVP." The result? Six months of development, a bloated product, and no market validation.
 
 **Fix:** Define the one core workflow that proves your thesis. Build that. Ship it. Learn.
 
@@ -605,27 +627,27 @@ Building an MVP is an exercise in disciplined restraint. Build less, learn more,
     date: "2026-01-20",
     readTime: "7 min read",
     category: "Studio",
-    content: `Running an agency and a venture studio simultaneously gives us an unfair advantage: we see problems across dozens of industries every year. The best studio ideas don't come from brainstorming sessions — they come from patterns we notice while building for clients.
+    content: `Running an agency and a venture studio simultaneously gives me an unfair advantage: I see problems across dozens of industries every year. The best studio ideas don't come from brainstorming sessions — they come from patterns I notice while building for clients.
 
 ## The Opportunity Filter
 
-Not every good idea deserves to become a product. We filter opportunities through four lenses:
+Not every good idea deserves to become a product. I filter opportunities through four lenses:
 
 **1. Is there a 10x AI improvement possible?**
-If AI can only deliver a marginal improvement, it's not worth building a product around. We look for workflows where AI can fundamentally change the economics — 10x faster, 10x cheaper, 10x more accessible.
+If AI can only deliver a marginal improvement, it's not worth building a product around. I look for workflows where AI can fundamentally change the economics — 10x faster, 10x cheaper, 10x more accessible.
 
 **2. Is the market underserved?**
-We avoid crowded markets. Instead, we look for industries where the existing tools are outdated, fragmented, or built for a different era.
+I avoid crowded markets. Instead, I look for industries where the existing tools are outdated, fragmented, or built for a different era.
 
 **3. Can a small team win?**
-Some markets require enterprise sales teams, regulatory approvals, and massive capital. We target opportunities where a great product can win through self-serve adoption and word of mouth.
+Some markets require enterprise sales teams, regulatory approvals, and massive capital. I target opportunities where a great product can win through self-serve adoption and word of mouth.
 
-**4. Do we have domain insight?**
-Our agency work gives us deep exposure to specific industries. When we've seen the same problem across 5 different clients, that's a signal.
+**4. Do I have domain insight?**
+My agency work gives me deep exposure to specific industries. When I've seen the same problem across 5 different clients, that's a signal.
 
 ## From Idea to Venture
 
-Once an idea passes the filter, we follow a structured process:
+Once an idea passes the filter, I follow a structured process:
 
 **Week 1-2: Thesis validation.** Research, user interviews, competitive analysis. The goal is to confirm or kill the idea quickly.
 
@@ -633,13 +655,13 @@ Once an idea passes the filter, we follow a structured process:
 
 **Week 7-12: Beta.** Iterate based on real usage. Define metrics. Find product-market fit signals.
 
-**Month 4+: Scale or sunset.** If the metrics are there, we invest. If not, we document the learnings and move on.
+**Month 4+: Scale or sunset.** If the metrics are there, I invest. If not, I document the learnings and move on.
 
 ## The Portfolio Today
 
 - **Synth** (Live) — born from seeing every marketing team struggle with content volume
 - **Cortex** (Beta) — born from watching engineering teams lose knowledge when people leave
-- **Nuro** (Building) — born from the repetitive workflow problems we saw across logistics clients
+- **Nuro** (Building) — born from the repetitive workflow problems I saw across logistics clients
 - **Axiom** (Research) — born from the gap between data teams and business teams in every organization
 
 The studio isn't a side project — it's core to my work. Every venture I launch adds to my thesis that AI will reshape every industry, one workflow at a time.`,
@@ -660,7 +682,7 @@ The studio isn't a side project — it's core to my work. Every venture I launch
 
 **Accidental debt** is unintentional. It accumulates from shortcuts nobody documented, patterns that diverged over time, and knowledge that left with former team members. This is like credit card debt — it compounds and suffocates.
 
-## The Framework We Use
+## The Framework I Use
 
 I categorize debt into four buckets:
 

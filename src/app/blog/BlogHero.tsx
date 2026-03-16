@@ -32,7 +32,8 @@ export default function BlogHero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mx-auto mt-4 max-w-xl font-mono text-sm text-text-secondary"
         >
-          {"> "}Ideas on AI engineering, startup building, and scalable software.
+          {"> "}AI Growth & Development thought leadership — engineering, GTM,
+          and building products that scale.
         </motion.p>
       </div>
     </section>

@@ -9,7 +9,7 @@ export default function Process() {
     <section className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Process"
-        title="How We Work"
+        title="How I Work"
         description="A proven methodology that balances speed with quality. Growth mindset is embedded from the very first conversation."
       />
 

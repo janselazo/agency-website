@@ -13,7 +13,7 @@ export default function GrowthManifesto() {
           transition={{ duration: 0.6 }}
         >
           <span className="mb-4 inline-block font-mono text-sm uppercase tracking-widest text-accent">
-            Our Belief
+            My Belief
           </span>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
             Software should be built for the company you&apos;re becoming, not
@@ -31,17 +31,17 @@ export default function GrowthManifesto() {
           <p className="text-lg leading-relaxed">
             Too many startups build software that works today but crumbles under
             the weight of success. Too many enterprises build systems so rigid
-            that adapting to change becomes a multi-year project. We believe
+            that adapting to change becomes a multi-year project. I believe
             there&apos;s a better way.
           </p>
           <p className="text-lg leading-relaxed">
-            Our approach is rooted in years of building products that have scaled
-            from zero to millions of users. We&apos;ve seen what breaks, what holds,
+            My approach is rooted in years of building products that have scaled
+            from zero to millions of users. I&apos;ve seen what breaks, what holds,
             and what separates systems that enable growth from systems that
             bottleneck it.
           </p>
           <p className="text-lg leading-relaxed">
-            The growth mindset isn&apos;t a buzzword for us — it&apos;s an engineering
+            The growth mindset isn&apos;t a buzzword for me — it&apos;s an engineering
             philosophy. It means choosing architectures that bend rather than
             break. It means instrumenting everything so you can make decisions
             based on evidence, not gut feeling. It means building teams and

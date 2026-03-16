@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import BlogHero from "./BlogHero";
 import PostGrid from "./PostGrid";
+import NewsletterSignup from "@/components/ui/NewsletterSignup";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -12,6 +13,7 @@ export default function BlogPage() {
   return (
     <>
       <BlogHero />
+      <NewsletterSignup />
       <PostGrid />
     </>
   );

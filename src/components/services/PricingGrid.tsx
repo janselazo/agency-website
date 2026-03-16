@@ -11,10 +11,10 @@ export default function PricingGrid() {
       <SectionHeading
         label="Pricing"
         title="Engagement Models"
-        description="Flexible options designed for startups moving fast and enterprises scaling smart."
+        description="Advisory options from a single call to full product + growth partnership."
       />
 
-      <div className="grid gap-8 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {pricingTiers.map((tier, i) => (
           <motion.div
             key={tier.name}

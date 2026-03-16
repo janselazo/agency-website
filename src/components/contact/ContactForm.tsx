@@ -86,7 +86,7 @@ export default function ContactForm() {
           rows={5}
           required
           className="w-full resize-none rounded border border-border bg-surface/60 px-4 py-3 font-mono text-sm text-text-primary placeholder-text-secondary/30 outline-none backdrop-blur-sm transition-all focus:border-accent focus:shadow-[0_0_15px_rgba(0,212,255,0.1)]"
-          placeholder="> tell us about your project..."
+          placeholder="> tell me about your project..."
         />
       </div>
 

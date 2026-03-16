@@ -6,7 +6,7 @@ const experiences = [
   {
     domain: "Startups & Scale-ups",
     description:
-      "From pre-seed MVPs to Series B platforms, we've helped dozens of startups navigate the technical challenges of rapid growth.",
+      "From pre-seed MVPs to Series B platforms, I've helped dozens of startups navigate the technical challenges of rapid growth.",
     examples: [
       "Built MVPs that secured $50M+ in combined funding",
       "Scaled systems from 0 to 1M+ users",
@@ -16,7 +16,7 @@ const experiences = [
   {
     domain: "Enterprise & SaaS",
     description:
-      "We've modernized legacy systems, built internal tools, and integrated AI into workflows for companies across finance, legal, healthcare, and logistics.",
+      "I've modernized legacy systems, built internal tools, and integrated AI into workflows for companies across finance, legal, healthcare, and logistics.",
     examples: [
       "Reduced processing times by 60-80% with AI automation",
       "Migrated monoliths to microservices without downtime",
@@ -26,7 +26,7 @@ const experiences = [
   {
     domain: "AI & Machine Learning",
     description:
-      "From fine-tuning LLMs to deploying computer vision pipelines, we've shipped AI solutions that work in the real world — not just in a notebook.",
+      "From fine-tuning LLMs to deploying computer vision pipelines, I've shipped AI solutions that work in the real world — not just in a notebook.",
     examples: [
       "Production LLM applications serving millions of queries",
       "Custom ML models for industry-specific problems",
@@ -52,7 +52,7 @@ export default function Experience() {
           Battle-tested across industries, stages, and scales
         </h2>
         <p className="mt-4 max-w-2xl text-lg text-text-secondary">
-          Our methodology isn&apos;t theoretical — it&apos;s forged from years of
+          My methodology isn&apos;t theoretical — it&apos;s forged from years of
           building software that has to perform under real-world pressure.
         </p>
       </motion.div>

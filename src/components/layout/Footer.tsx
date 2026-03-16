@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import NewsletterSignup from "@/components/ui/NewsletterSignup";
 
 export default function Footer() {
   return (
@@ -49,6 +52,11 @@ export default function Footer() {
 
           <div>
             <h4 className="mb-4 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
+              <span className="h-px w-4 bg-accent/30" />
+              Newsletter
+            </h4>
+            <NewsletterSignup compact />
+            <h4 className="mb-4 mt-8 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-accent">
               <span className="h-px w-4 bg-accent/30" />
               Connect
             </h4>

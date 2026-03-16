@@ -8,7 +8,7 @@ import CTASection from "@/components/home/CTASection";
 export const metadata: Metadata = {
   title: "Services & Pricing",
   description:
-    "Transparent pricing and flexible engagement models for AI development, MVPs, and enterprise software. From sprint-based work to long-term partnerships.",
+    "Advisory-first pricing: one-time calls, product development advisory, growth advisory, and full partnerships for B2B & B2C SaaS startups.",
 };
 
 export default function ServicesPage() {

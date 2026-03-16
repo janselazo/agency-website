@@ -18,28 +18,7 @@ export default function AgencyPage() {
       <ServicesGrid />
       <CaseStudies />
       <Process />
-      <SocialProof />
       <CTASection />
     </>
-  );
-}
-
-function SocialProof() {
-  return (
-    <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-      <p className="mb-12 text-center font-mono text-xs uppercase tracking-widest text-text-secondary">
-        Trusted by forward-thinking teams
-      </p>
-      <div className="grid grid-cols-2 gap-8 opacity-40 sm:grid-cols-3 lg:grid-cols-6">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <div
-            key={i}
-            className="flex h-12 items-center justify-center rounded-lg border border-border bg-surface"
-          >
-            <span className="text-xs text-text-secondary">Client {i + 1}</span>
-          </div>
-        ))}
-      </div>
-    </section>
   );
 }

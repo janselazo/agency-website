@@ -27,10 +27,10 @@ export default function ServicesHero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl font-bold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          Transparent pricing,
+          Advisory-first,
           <br />
           <span className="glow-text-blue bg-gradient-to-r from-accent to-accent-violet bg-clip-text text-transparent">
-            exceptional outcomes
+            outcome-driven
           </span>
         </motion.h1>
 
@@ -40,8 +40,7 @@ export default function ServicesHero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mx-auto mt-6 max-w-2xl font-mono text-sm leading-relaxed text-text-secondary"
         >
-          {"> "}No hidden fees, no scope creep. Choose the engagement model
-          that fits your stage. Every tier includes full source code ownership.
+          {"> "}Advisory for SaaS founders building and growing with AI.
         </motion.p>
       </div>
     </section>

@@ -6,17 +6,17 @@ const principles = [
   {
     title: "AI-Native Thinking",
     description:
-      "Every product starts with the question: how can AI fundamentally improve this experience? We don't bolt AI onto existing patterns — we rethink the entire workflow.",
+      "Every product starts with the question: how can AI fundamentally improve this experience? I don't bolt AI onto existing patterns — I rethink the entire workflow.",
   },
   {
     title: "Build in Public",
     description:
-      "We share our journey — the wins, the pivots, and the learnings. Transparency builds trust with our early adopters and keeps us accountable.",
+      "I share my journey — the wins, the pivots, and the learnings. Transparency builds trust with early adopters and keeps me accountable.",
   },
   {
     title: "Speed & Iteration",
     description:
-      "Ship the smallest meaningful thing, gather real feedback, and compound improvements over time. We'd rather launch in 6 weeks than plan for 6 months.",
+      "Ship the smallest meaningful thing, gather real feedback, and compound improvements over time. I'd rather launch in 6 weeks than plan for 6 months.",
   },
   {
     title: "Founder-Led Teams",
@@ -39,20 +39,20 @@ export default function Philosophy() {
             Philosophy
           </span>
           <h2 className="text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
-            How we identify
+            How I identify
             <br />& build products
           </h2>
           <p className="mt-4 leading-relaxed text-text-secondary">
-            We look for problems where AI can deliver a 10x improvement in
-            markets that are ripe for disruption. Once we validate the thesis,
-            we assemble a focused team and move fast — treating each venture as
+            I look for problems where AI can deliver a 10x improvement in
+            markets that are ripe for disruption. Once I validate the thesis,
+            I assemble a focused team and move fast — treating each venture as
             a real startup with studio-level resources, mentorship, and shared
             infrastructure.
           </p>
           <p className="mt-4 leading-relaxed text-text-secondary">
-            Our agency work gives us a unique advantage: we see patterns across
+            My agency work gives me a unique advantage: I see patterns across
             dozens of industries and identify gaps that others miss. The best
-            studio ideas often come from problems we encounter building for
+            studio ideas often come from problems I encounter building for
             clients.
           </p>
         </motion.div>

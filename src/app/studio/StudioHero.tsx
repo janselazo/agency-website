@@ -57,7 +57,7 @@ export default function StudioHero() {
             [ Explore Ventures ]
           </Button>
           <Button href="/contact" variant="primary" size="lg">
-            [ Partner With Us ]
+            [ Partner With Me ]
           </Button>
         </motion.div>
       </div>

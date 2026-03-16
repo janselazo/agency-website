@@ -6,28 +6,28 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const faqs = [
   {
-    q: "How quickly can you start a new project?",
-    a: "Most engagements kick off within 1-2 weeks of signing. For urgent projects, we can begin discovery within days.",
+    q: "How quickly can we get started?",
+    a: "Advisory calls can be booked within a few days. For ongoing advisory, most engagements kick off within 1-2 weeks of signing.",
   },
   {
-    q: "Do we own the source code?",
-    a: "Yes, 100%. Everything we build is yours. Full source code, documentation, and infrastructure configuration — transferred at the end of every engagement.",
+    q: "Do you only advise, or do you build too?",
+    a: "I focus on advisory — strategy, architecture, and growth guidance. For hands-on development, I can connect you with trusted partners or recommend build approaches.",
   },
   {
-    q: "Can we scale the team up or down?",
-    a: "Absolutely. Our Partnership tier is designed to flex monthly. Need more firepower for a launch? We scale up. Post-launch stabilization? We scale down. No long-term lock-in.",
+    q: "Can I scale the commitment up or down?",
+    a: "Absolutely. Monthly advisory tiers are flexible. Need more depth for a launch? I can add sessions. Post-launch? I can dial back. No long-term lock-in.",
   },
   {
     q: "What technologies do you work with?",
-    a: "We're technology-agnostic but opinionated. Our core stack includes TypeScript, React/Next.js, Python, Node.js, PostgreSQL, and major cloud platforms (AWS, GCP, Vercel). For AI, we work with OpenAI, LangChain, TensorFlow, and custom ML pipelines.",
+    a: "I'm technology-agnostic but opinionated. My core stack includes TypeScript, React/Next.js, Python, Node.js, PostgreSQL, and major cloud platforms (AWS, GCP, Vercel). For AI, I work with OpenAI, LangChain, TensorFlow, and custom ML pipelines.",
   },
   {
     q: "Do you work with non-technical founders?",
-    a: "Yes — many of our clients are non-technical founders with a strong vision. We act as your technical co-founder, translating business goals into architecture and handling all the engineering.",
+    a: "Yes — many of my clients are non-technical founders with a strong vision. I act as your technical and growth advisor, translating business goals into actionable strategy.",
   },
   {
-    q: "What does your discovery process look like?",
-    a: "Discovery typically takes 1-2 weeks and includes stakeholder interviews, technical landscape assessment, competitive analysis, and a detailed proposal with architecture recommendations, timeline, and investment breakdown.",
+    q: "What does an advisory call look like?",
+    a: "A 90-minute deep-dive on your specific challenge — technical architecture, product roadmap, GTM strategy, or growth metrics. You get a written summary and action items. No pitch, no upsell.",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function FAQ() {
       <SectionHeading
         label="FAQ"
         title="Common Questions"
-        description="Answers to the questions we hear most often."
+        description="Answers to the questions I hear most often."
       />
 
       <div className="mx-auto max-w-3xl space-y-4">

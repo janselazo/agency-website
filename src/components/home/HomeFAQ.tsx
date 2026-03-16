@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "How do you approach new projects?",
-    a: "Every engagement starts with a Discovery phase where I understand your goals, users, and technical landscape. From there we design, build in agile sprints, and deploy — with growth mindset embedded from the very first decision.",
+    a: "Every engagement starts with a Discovery phase where I understand your goals, users, and technical landscape. From there I design, build in agile sprints, and deploy — with growth mindset embedded from the very first decision.",
   },
   {
     q: "Do you work with early-stage startups?",

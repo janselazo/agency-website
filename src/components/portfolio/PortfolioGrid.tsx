@@ -1,27 +1,45 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
-import { portfolioProjects } from "@/lib/data";
+import { portfolioProjects, type ProjectCategory } from "@/lib/data";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
 import Badge from "@/components/ui/Badge";
 
-const filters = [
+const typeFilters = [
   { id: "all", label: "All" },
   { id: "studio", label: "Studio" },
   { id: "agency", label: "Agency" },
 ] as const;
 
+const categoryFilters: { id: ProjectCategory | "all"; label: string }[] = [
+  { id: "all", label: "All" },
+  { id: "mobile-app", label: "Mobile App" },
+  { id: "web-app", label: "Web App" },
+  { id: "ai-agent", label: "AI Agent" },
+  { id: "saas-platform", label: "SaaS Platform" },
+  { id: "data-platform", label: "Data Platform" },
+  { id: "automation", label: "Automation" },
+];
+
 export default function PortfolioGrid() {
-  const [activeFilter, setActiveFilter] = useState<"all" | "studio" | "agency">(
+  const [typeFilter, setTypeFilter] = useState<"all" | "studio" | "agency">(
     "all"
   );
+  const [categoryFilter, setCategoryFilter] = useState<
+    ProjectCategory | "all"
+  >("all");
 
-  const filteredProjects =
-    activeFilter === "all"
-      ? portfolioProjects
-      : portfolioProjects.filter((p) => p.type === activeFilter);
+  const filteredProjects = useMemo(() => {
+    return portfolioProjects.filter((p) => {
+      const matchesType =
+        typeFilter === "all" || p.type === typeFilter;
+      const matchesCategory =
+        categoryFilter === "all" || p.category === categoryFilter;
+      return matchesType && matchesCategory;
+    });
+  }, [typeFilter, categoryFilter]);
 
   return (
     <section id="projects" className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
@@ -31,15 +49,30 @@ export default function PortfolioGrid() {
         description="Building for my studio. Advising for the agency."
       />
 
-      <div className="mb-12 flex flex-wrap justify-center gap-2">
-        {filters.map((filter) => (
+      <div className="mb-8 flex flex-wrap justify-center gap-2">
+        {typeFilters.map((filter) => (
           <button
             key={filter.id}
-            onClick={() => setActiveFilter(filter.id)}
+            onClick={() => setTypeFilter(filter.id)}
             className={`rounded border px-4 py-2 font-mono text-xs uppercase tracking-widest transition-all ${
-              activeFilter === filter.id
+              typeFilter === filter.id
                 ? "border-accent bg-accent/10 text-accent"
                 : "border-border text-text-secondary hover:border-accent/50 hover:text-accent"
+            }`}
+          >
+            {filter.label}
+          </button>
+        ))}
+      </div>
+      <div className="mb-12 flex flex-wrap justify-center gap-2">
+        {categoryFilters.map((filter) => (
+          <button
+            key={filter.id}
+            onClick={() => setCategoryFilter(filter.id)}
+            className={`rounded border px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider transition-all ${
+              categoryFilter === filter.id
+                ? "border-accent-violet/50 bg-accent-violet/10 text-accent-violet"
+                : "border-border text-text-secondary hover:border-accent-violet/30 hover:text-accent-violet"
             }`}
           >
             {filter.label}
@@ -57,23 +90,29 @@ export default function PortfolioGrid() {
             transition={{ duration: 0.5, delay: i * 0.05 }}
           >
             <Card className="flex h-full flex-col">
-              <div className="mb-3 flex items-center justify-between gap-2">
-                <span
-                  className={`inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.2em] ${
-                    project.type === "agency"
-                      ? "text-accent"
-                      : "text-accent-violet"
-                  }`}
-                >
+              <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                <div className="flex items-center gap-2">
                   <span
-                    className={`h-1.5 w-1.5 rounded-full ${
+                    className={`inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.2em] ${
                       project.type === "agency"
-                        ? "bg-accent"
-                        : "bg-accent-violet"
+                        ? "text-accent"
+                        : "text-accent-violet"
                     }`}
-                  />
-                  {project.type}
-                </span>
+                  >
+                    <span
+                      className={`h-1.5 w-1.5 rounded-full ${
+                        project.type === "agency"
+                          ? "bg-accent"
+                          : "bg-accent-violet"
+                      }`}
+                    />
+                    {project.type}
+                  </span>
+                  <span className="rounded border border-border bg-surface/50 px-2 py-0.5 font-mono text-[10px] text-text-secondary">
+                    {categoryFilters.find((f) => f.id === project.category)
+                      ?.label ?? project.category}
+                  </span>
+                </div>
                 {project.status && (
                   <Badge status={project.status} />
                 )}
