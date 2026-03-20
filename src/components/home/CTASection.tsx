@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
+import { SECTION_EYEBROW_CLASSNAME } from "@/components/ui/SectionHeading";
 
 export default function CTASection() {
   return (
@@ -22,11 +23,12 @@ export default function CTASection() {
         </div>
 
         <div className="relative z-10">
-          <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-widest text-accent">
-            Next step
-          </span>
-          <h2 className="heading-display text-3xl font-bold text-text-primary sm:text-4xl">
-            Tell me what you&apos;re building
+          <div className="mb-5 flex justify-center">
+            <span className={SECTION_EYEBROW_CLASSNAME}>Next step</span>
+          </div>
+          <h2 className="heading-display text-3xl font-bold tracking-tight text-text-primary sm:text-4xl lg:text-5xl lg:leading-tight">
+            <span className="block">Tell me what you&apos;re</span>
+            <span className="mt-1 block text-accent">building</span>
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-text-secondary sm:text-base">
             Share a short brief—problem, users, timeline—and I&apos;ll respond

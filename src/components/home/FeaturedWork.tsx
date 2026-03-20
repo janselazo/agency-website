@@ -11,14 +11,15 @@ export default function FeaturedWork() {
     <section className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
       <SectionHeading
         label="Featured case studies"
-        title="Recent outcomes"
-        description="A sample of client builds and studio products—AI software that shipped and metrics that moved."
+        title="Recent"
+        titleAccent="outcomes"
+        description="SaaS web apps, ecommerce stores, and marketing sites for the teams you see above. Each build is meant to ship cleanly and hand off without friction."
       />
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {featuredProjects.map((project, i) => (
           <motion.div
-            key={project.title}
+            key={`${project.client ?? "project"}-${project.title}`}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -39,6 +40,11 @@ export default function FeaturedWork() {
                   </span>
                 )}
               </div>
+              {project.client ? (
+                <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-text-secondary/90">
+                  {project.client}
+                </p>
+              ) : null}
               <h3 className="heading-display text-lg font-bold text-text-primary">
                 {project.title}
               </h3>
@@ -61,7 +67,7 @@ export default function FeaturedWork() {
       </div>
 
       <div className="mt-12 flex justify-center">
-        <Button href="/case-studies" variant="secondary" size="lg" showLiveDot>
+        <Button href="/case-studies" variant="dark" size="lg" showLiveDot>
           All case studies
         </Button>
       </div>

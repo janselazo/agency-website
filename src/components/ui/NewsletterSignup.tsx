@@ -3,6 +3,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
+import {
+  SECTION_EYEBROW_CLASSNAME,
+  SECTION_EYEBROW_COMPACT_CLASSNAME,
+} from "@/components/ui/SectionHeading";
 
 interface NewsletterSignupProps {
   compact?: boolean;
@@ -56,7 +60,10 @@ export default function NewsletterSignup({ compact }: NewsletterSignupProps) {
   }
 
   return (
-    <section className="mx-auto max-w-2xl px-6 py-16 lg:px-8">
+    <section
+      id="newsletter"
+      className="mx-auto max-w-2xl scroll-mt-28 px-6 py-16 lg:px-8"
+    >
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -64,11 +71,12 @@ export default function NewsletterSignup({ compact }: NewsletterSignupProps) {
         transition={{ duration: 0.45 }}
         className="rounded-2xl border border-border bg-white p-8 text-center shadow-sm"
       >
-        <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-widest text-accent">
-          Newsletter
-        </span>
-        <h3 className="text-xl font-semibold text-text-primary sm:text-2xl">
-          Practical notes on AI product development
+        <div className="mb-4 flex justify-center">
+          <span className={SECTION_EYEBROW_CLASSNAME}>Newsletter</span>
+        </div>
+        <h3 className="heading-display text-xl font-bold tracking-tight text-text-primary sm:text-2xl lg:text-3xl">
+          <span className="block">Practical notes on</span>
+          <span className="mt-1 block text-accent">AI product development</span>
         </h3>
         <p className="mt-2 text-sm text-text-secondary">
           Occasional writing on agents, shipping, and what holds up in

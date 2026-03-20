@@ -7,27 +7,27 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const faqs = [
   {
     q: "How quickly can we get started?",
-    a: "Advisory calls are usually available within a few days. Retainers and build work typically begin within one to two weeks after scope and paperwork are aligned.",
+    a: "Flexible consultancy blocks can usually begin within days. PoC and production work typically kick off within one to two weeks once scope, timeline, and paperwork are aligned.",
   },
   {
-    q: "Do you only advise, or do you build?",
-    a: "Both. Retainers on this page are advisory-first. For implementation—agents, apps, integrations—I scope fixed phases or sprint-based delivery and ship alongside your team.",
+    q: "Do you only advise, or do you build and deploy?",
+    a: "Both. The consultancy tier is for strategy and architecture. PoC and production tiers are hands-on build, integration, and deployment—with documentation and handoff so your team can run it.",
   },
   {
     q: "Can we change the level of engagement over time?",
-    a: "Yes. Many teams start with a call or short PoC, move into a build phase, then shift to a lighter advisory rhythm after launch.",
+    a: "Yes. Common path: short discovery, then a PoC, then a production program—sometimes with hourly or advisory blocks alongside for steering.",
+  },
+  {
+    q: "What does $100–150/h cover?",
+    a: "Time-and-materials execution: implementation, integration, reviews, and iteration when a fixed package isn’t the right fit. Fixed ranges on this page are anchors; every quote is tailored after we clarify scope.",
   },
   {
     q: "What technologies do you use?",
-    a: "TypeScript, React/Next.js, Node/Python, PostgreSQL, and major clouds (AWS, GCP, Vercel). On the AI side: OpenAI, Anthropic, LangChain/LlamaIndex patterns, and open-weight models when they’re the right tradeoff.",
+    a: "TypeScript, React/Next.js, Node/Python, PostgreSQL, and major clouds (AWS, GCP, Vercel). On the AI side: OpenAI, Anthropic, LangChain/LlamaIndex-style patterns, and open-weight models when they’re the right tradeoff.",
   },
   {
     q: "Do you work with non-technical stakeholders?",
     a: "Often. I translate goals into milestones, risks, and options so product and ops leaders can make decisions without drowning in stack details.",
-  },
-  {
-    q: "What does an advisory call include?",
-    a: "A 90-minute working session on the topic you choose—architecture, AI approach, roadmap, or growth—plus a written summary and concrete next steps. No generic pitch deck.",
   },
 ];
 
@@ -38,8 +38,9 @@ export default function FAQ() {
     <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
       <SectionHeading
         label="FAQ"
-        title="Common questions"
-        description="How advisory, builds, and timelines usually fit together."
+        title="Common"
+        titleAccent="questions"
+        description="How consultancy, PoC, production builds, and hourly work usually fit together."
       />
 
       <div className="mx-auto max-w-3xl space-y-3">

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SECTION_EYEBROW_CLASSNAME } from "@/components/ui/SectionHeading";
 
 export default function AboutHero() {
   return (
@@ -14,7 +15,7 @@ export default function AboutHero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45 }}
-          className="mb-5 inline-block text-xs font-semibold uppercase tracking-widest text-accent"
+          className={`mb-5 ${SECTION_EYEBROW_CLASSNAME}`}
         >
           About
         </motion.span>
@@ -23,10 +24,13 @@ export default function AboutHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.06 }}
-          className="text-4xl font-semibold leading-tight tracking-tight text-text-primary sm:text-5xl"
+          className="heading-display text-4xl font-bold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          Janse Lazo —{" "}
-          <span className="text-accent">custom AI software</span> &amp; growth
+          <span className="block">Janse Lazo —</span>
+          <span className="mt-1 block">
+            <span className="text-accent">custom AI software</span>
+            <span className="text-text-primary"> &amp; growth</span>
+          </span>
         </motion.h1>
 
         <motion.p

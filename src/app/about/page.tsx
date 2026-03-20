@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 const highlights = [
   "10x10K Cuba — Mikma",
   "Startup Weekend Havana — Sírvete",
-  "TapTok — coverage in Miami Herald, Refresh Miami, El Nuevo Herald, New York Wire",
+  "TapTok — scaled from 0 to 15,000 customers, with teams at Authentic Brands Group, Coral Gables, AT&T, Harvard University, NASA, RP Realty, and more",
+  "TapTok — press: Miami Herald, Refresh Miami, El Nuevo Herald, New York Wire",
 ] as const;
 
 const credentials = [
@@ -31,7 +32,8 @@ export default function AboutPage() {
         <SectionHeading
           align="left"
           label="Story"
-          title="From strong foundations to product-led growth"
+          title="From strong foundations to"
+          titleAccent="product-led growth"
           description="My path is shaped by engineering education at CUJAE and a move toward building software businesses in the U.S.—with a focus on products that scale and teams that can run them after launch."
         />
         <Card className="border-border/80 bg-white p-8 shadow-soft sm:p-10">
@@ -43,6 +45,30 @@ export default function AboutPage() {
             founders and operators who need outcomes—not experiments stuck in
             slides.
           </p>
+          <p className="mt-6 text-base leading-relaxed text-text-secondary">
+            One chapter that cemented that for me was{" "}
+            <span className="font-medium text-text-primary">TapTok</span>: we
+            grew it from{" "}
+            <span className="font-medium text-text-primary">0 to 15,000</span>{" "}
+            customers, landing and supporting use cases across{" "}
+            <span className="font-medium text-text-primary">
+              Authentic Brands Group
+            </span>
+            ,{" "}
+            <span className="font-medium text-text-primary">Coral Gables</span>
+            ,{" "}
+            <span className="font-medium text-text-primary">AT&amp;T</span>,{" "}
+            <span className="font-medium text-text-primary">
+              Harvard University
+            </span>
+            ,{" "}
+            <span className="font-medium text-text-primary">NASA</span>, and{" "}
+            <span className="font-medium text-text-primary">RP Realty</span>
+            —alongside thousands of SMBs. That mix of household names, public
+            institutions, and high-volume SMB taught me how to tighten
+            onboarding, keep product and GTM aligned, and ship when the story
+            and the software both have to hold up in the room.
+          </p>
         </Card>
       </section>
 
@@ -50,7 +76,8 @@ export default function AboutPage() {
         <SectionHeading
           align="left"
           label="Today"
-          title="Zenpho & client work"
+          title="Zenpho & client"
+          titleAccent="work"
           description="Through Zenpho and direct engagements, I focus on custom AI software and AI agents for organizations that need production guardrails, integrations, and interfaces their teams will actually use."
         />
         <Card className="border-border/80 bg-white p-8 shadow-soft sm:p-10">
@@ -72,7 +99,8 @@ export default function AboutPage() {
         <SectionHeading
           align="left"
           label="Highlights"
-          title="Selected milestones"
+          title="Selected"
+          titleAccent="milestones"
           description="A few public touchpoints from entrepreneurship, community, and media—titles as listed on my public profile."
         />
         <ul className="space-y-4">
@@ -90,7 +118,8 @@ export default function AboutPage() {
         <SectionHeading
           align="left"
           label="Credentials"
-          title="Trust & craft"
+          title="Trust"
+          titleAccent="& craft"
           description="Marketing and growth-platform certifications I maintain alongside hands-on engineering—useful when AI products need to connect to campaigns, funnels, and analytics."
         />
         <div className="flex flex-wrap gap-3">

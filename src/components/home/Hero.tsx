@@ -2,15 +2,15 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
+import { SECTION_EYEBROW_CLASSNAME } from "@/components/ui/SectionHeading";
 import { experienceStats } from "@/lib/data";
 
 const clients = [
-  "TechFlow",
-  "Meridian AI",
-  "NovaLabs",
-  "Arclight",
-  "Vantage",
-  "Helix Corp",
+  "BeZazzy",
+  "Craveclean",
+  "TQMuch",
+  "USRallyStripes",
+  "Apex Inspection Pro",
 ];
 
 export default function Hero() {
@@ -22,8 +22,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55 }}
         >
-          <span className="mb-5 inline-block rounded-full bg-white/90 px-5 py-2 text-xs font-bold uppercase tracking-widest text-accent-green shadow-soft ring-1 ring-accent-green/25">
-            Custom AI software &amp; AI agents
+          <span className={`mb-5 ${SECTION_EYEBROW_CLASSNAME}`}>
+            Custom AI software development and AI agents
           </span>
         </motion.div>
 
@@ -31,11 +31,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.06 }}
-          className="heading-display text-4xl font-bold leading-[1.12] text-text-primary sm:text-5xl sm:leading-[1.1] lg:text-6xl lg:leading-[1.08]"
+          className="heading-display text-4xl font-bold leading-[1.15] text-text-primary sm:text-5xl sm:leading-[1.12] lg:text-6xl lg:leading-[1.1]"
         >
-          Custom AI software &amp; agents your team
-          <br className="hidden sm:block" />
-          <span className="text-accent"> ships with confidence</span>
+          <span className="block">
+            Custom AI software development{" "}
+            <span className="text-accent">and AI agents</span>
+          </span>
         </motion.h1>
 
         <motion.p
@@ -44,8 +45,8 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.16 }}
           className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-text-secondary sm:text-lg"
         >
-          LLMs, RAG, agents, and automation in web and mobile apps—built for
-          real workflows, clear UX, and code you can run after launch.
+          I design and ship AI that runs in your real product—web, mobile, and
+          agents tied to your data. You get working software and code you own.
         </motion.p>
 
         <motion.div
@@ -57,13 +58,8 @@ export default function Hero() {
           <Button href="/contact" variant="primary" size="lg">
             Start a project
           </Button>
-          <Button
-            href="/case-studies"
-            variant="dark"
-            size="lg"
-            showLiveDot
-          >
-            View case studies
+          <Button href="/case-studies" variant="dark" size="lg" showLiveDot>
+            View Case Studies
           </Button>
         </motion.div>
 
@@ -119,21 +115,21 @@ export default function Hero() {
             ))}
           </div>
         </motion.div>
-      </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.1, duration: 0.45 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2"
-      >
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-[10px] font-semibold uppercase tracking-widest text-text-secondary/50">
-            Scroll
-          </span>
-          <div className="h-6 w-px rounded-full bg-gradient-to-b from-accent/50 to-transparent" />
-        </div>
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.1, duration: 0.45 }}
+          className="mt-14 flex justify-center pb-2 md:mt-16"
+        >
+          <div className="flex flex-col items-center gap-2">
+            <span className="text-[10px] font-semibold uppercase tracking-widest text-text-secondary/50">
+              Scroll
+            </span>
+            <div className="h-6 w-px rounded-full bg-gradient-to-b from-accent/50 to-transparent" />
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }

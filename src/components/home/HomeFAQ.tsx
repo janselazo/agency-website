@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Where can I see pricing?",
-    a: "The Services page lists advisory retainers and engagement patterns. Custom build scopes vary by surface area; contact me with a short brief and I’ll reply with a sensible next step.",
+    a: "See the Pricing page for consultancy, PoC, production, and enterprise-style programs, plus $100–150/h time-and-materials. Exact quotes depend on scope—send a short brief and I’ll suggest a sensible next step.",
   },
   {
     q: "Where are you based?",
@@ -42,7 +42,8 @@ export default function HomeFAQ() {
     <section className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
       <SectionHeading
         label="FAQ"
-        title="Common questions"
+        title="Common"
+        titleAccent="questions"
         description="Straight answers about how I work with teams shipping AI into real products."
       />
 

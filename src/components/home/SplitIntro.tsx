@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
+import { SECTION_EYEBROW_COMPACT_CLASSNAME } from "@/components/ui/SectionHeading";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -16,7 +17,8 @@ const cards = [
   {
     label: "Services",
     badgeClass: "bg-accent text-white",
-    title: "Custom AI software for your stack.",
+    title: "Custom AI software",
+    titleAccent: "for your stack.",
     body: "Web apps, mobile, stores, and AI solutions—LLMs, agents, RAG, and integrations scoped for production, not demos.",
     href: "/services",
     cta: "Explore services",
@@ -25,7 +27,8 @@ const cards = [
   {
     label: "Case studies",
     badgeClass: "bg-accent-violet text-white",
-    title: "Proof from shipped work.",
+    title: "Proof from",
+    titleAccent: "shipped work.",
     body: "Client builds and studio products across agents, apps, and platforms—outcomes we measured together.",
     href: "/case-studies",
     cta: "Browse case studies",
@@ -34,8 +37,9 @@ const cards = [
   {
     label: "Studio",
     badgeClass: "bg-accent-warm text-white",
-    title: "SoldTools for sales teams.",
-    body: "My public studio focus: a toolkit for car sales professionals—leads, appointments, and referrals with AI-backed workflows.",
+    title: "Personal projects",
+    titleAccent: "I ship.",
+    body: "SoldTools—my live studio product for car sales teams—built on my own time, separate from client engagements.",
     href: "/studio",
     cta: "Open Studio",
     initial: "T",
@@ -62,11 +66,14 @@ export default function SplitIntro() {
               >
                 {card.initial}
               </div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-text-secondary">
+              <span className={`${SECTION_EYEBROW_COMPACT_CLASSNAME} mb-3`}>
                 {card.label}
               </span>
-              <h3 className="heading-display mt-2 text-xl font-bold leading-snug text-text-primary lg:text-2xl">
-                {card.title}
+              <h3 className="heading-display mt-1 text-xl font-bold leading-snug text-text-primary lg:text-2xl">
+                <span className="block">{card.title}</span>
+                <span className="mt-0.5 block text-accent">
+                  {card.titleAccent}
+                </span>
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-text-secondary">
                 {card.body}

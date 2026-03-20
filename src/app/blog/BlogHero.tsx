@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SECTION_EYEBROW_CLASSNAME } from "@/components/ui/SectionHeading";
 
 export default function BlogHero() {
   return (
@@ -19,10 +20,10 @@ export default function BlogHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.06 }}
-          className="text-4xl font-semibold leading-tight tracking-tight text-text-primary sm:text-5xl"
+          className="heading-display text-4xl font-bold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          Notes on{" "}
-          <span className="text-accent-violet">shipping AI software</span>
+          <span className="block">Notes on</span>
+          <span className="mt-1 block text-accent">shipping AI software</span>
         </motion.h1>
 
         <motion.p

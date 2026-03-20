@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SECTION_EYEBROW_CLASSNAME } from "@/components/ui/SectionHeading";
 
 export default function ContactHero() {
   return (
@@ -10,7 +11,7 @@ export default function ContactHero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45 }}
-          className="mb-5 inline-block text-xs font-semibold uppercase tracking-widest text-accent"
+          className={`mb-5 ${SECTION_EYEBROW_CLASSNAME}`}
         >
           Contact
         </motion.span>
@@ -19,10 +20,10 @@ export default function ContactHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.06 }}
-          className="text-4xl font-semibold leading-tight tracking-tight text-text-primary sm:text-5xl"
+          className="heading-display text-4xl font-bold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          Let&apos;s talk about your{" "}
-          <span className="text-accent">next AI release</span>
+          <span className="block">Let&apos;s talk about your</span>
+          <span className="mt-1 block text-accent">next AI release</span>
         </motion.h1>
 
         <motion.p

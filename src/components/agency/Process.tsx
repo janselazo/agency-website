@@ -9,7 +9,8 @@ export default function Process() {
     <section className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Process"
-        title="How we work together"
+        title="How we work"
+        titleAccent="together"
         description="Clear phases so you always know what’s next—especially important when models, data, and UX evolve in parallel."
       />
 

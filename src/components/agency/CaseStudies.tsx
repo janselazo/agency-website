@@ -12,14 +12,15 @@ export default function CaseStudies() {
     <section className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Results"
-        title="Client outcomes"
-        description="Examples of AI and software work where the goal was measurable impact—not a slide deck milestone."
+        title="Client"
+        titleAccent="outcomes"
+        description="SaaS web apps, ecommerce, and websites where the goal was something real customers could use—not a slide deck milestone."
       />
 
       <div className="grid gap-8 lg:grid-cols-2">
         {agencyProjects.map((project, i) => (
           <motion.div
-            key={project.title}
+            key={`${project.client ?? "project"}-${project.title}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -36,6 +37,11 @@ export default function CaseStudies() {
                   </span>
                 )}
               </div>
+              {project.client ? (
+                <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-text-secondary">
+                  {project.client}
+                </p>
+              ) : null}
               <h3 className="text-xl font-semibold text-text-primary">
                 {project.title}
               </h3>

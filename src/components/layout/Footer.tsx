@@ -9,14 +9,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <Link href="/" className="group flex items-center gap-2">
+            <Link href="/" className="group inline-block">
               <span className="text-lg font-bold tracking-tight text-text-primary">
                 Janse Lazo
               </span>
-              <span
-                className="h-2 w-2 rounded-full bg-accent opacity-80"
-                aria-hidden
-              />
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-secondary">
               Custom AI software development and AI agents—for web, mobile,
@@ -34,8 +30,9 @@ export default function Footer() {
                 { label: "Case Studies", href: "/case-studies" },
                 { label: "Studio", href: "/studio" },
                 { label: "Pricing", href: "/pricing" },
-                { label: "About me", href: "/about" },
+                { label: "About Me", href: "/about" },
                 { label: "Blog", href: "/blog" },
+                { label: "Resources", href: "/resources" },
                 { label: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <Link

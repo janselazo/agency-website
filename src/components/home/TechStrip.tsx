@@ -16,7 +16,8 @@ export default function TechStrip() {
     <section className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
       <SectionHeading
         label="Stack"
-        title="Tools & platforms"
+        title="Tools"
+        titleAccent="& platforms"
         description="Typical building blocks—always chosen for your constraints, not my preferences alone."
       />
 

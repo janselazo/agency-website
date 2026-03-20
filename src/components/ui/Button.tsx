@@ -18,6 +18,7 @@ interface ButtonProps {
   rel?: string;
 }
 
+/** `dark` = outlined secondary (light surface + accent border); use beside `primary` or with `showLiveDot`. */
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
     "bg-accent text-white border border-transparent hover:bg-accent-hover shadow-sm hover:shadow-md",
@@ -26,7 +27,7 @@ const variantStyles: Record<ButtonVariant, string> = {
   ghost:
     "bg-transparent text-text-secondary border border-transparent hover:text-accent hover:bg-surface",
   dark:
-    "bg-text-primary text-white border border-text-primary hover:bg-[#1a1a1a] shadow-sm",
+    "border border-accent/20 bg-white/95 text-text-primary shadow-soft backdrop-blur-sm hover:border-accent/40 hover:bg-surface hover:shadow-md",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

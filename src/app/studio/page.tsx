@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import StudioHero from "./StudioHero";
-import SoldToolsSection from "@/components/studio/SoldToolsSection";
+import VenturesGrid from "@/components/studio/VenturesGrid";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "Studio — SoldTools",
+  title: "Studio",
   description:
-    "SoldTools: a toolkit for car sales professionals—leads, appointments, and referrals. Sign in or talk to us about custom AI software.",
+    "Studio product—SoldTools—for car sales teams, built alongside client work. Custom software starts on Services or Contact.",
 };
 
 export default function StudioPage() {
   return (
     <>
       <StudioHero />
-      <SoldToolsSection />
+      <VenturesGrid />
       <CTASection />
     </>
   );

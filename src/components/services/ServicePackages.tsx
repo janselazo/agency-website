@@ -38,9 +38,10 @@ export default function ServicePackages() {
     <section className="border-t border-border bg-surface">
       <div className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
         <SectionHeading
-          label="Packages"
-          title="Scoped engagements"
-          description="When a retainer isn’t the right fit, we can structure fixed phases—discovery, build, launch—with clear deliverables."
+          label="How it runs"
+          title="From idea"
+          titleAccent="to production"
+          description="Typical phases inside AI builds—whether you start with consultancy, a PoC, or a full production engagement."
         />
 
         <div className="grid gap-8 lg:grid-cols-3">

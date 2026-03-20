@@ -72,7 +72,8 @@ export default function ServicesGrid() {
     <section className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Services"
-        title="Custom AI software development"
+        title="Custom AI software"
+        titleAccent="development"
         description="Web apps, mobile, websites, ecommerce, and AI agents—prioritized for production quality, your stack, and how your team ships."
       />
 

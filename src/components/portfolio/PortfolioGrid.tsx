@@ -45,8 +45,9 @@ export default function PortfolioGrid() {
     <section id="projects" className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Case studies"
-        title="Selected work"
-        description="Client builds and studio products—AI agents, apps, platforms, and automation."
+        title="Selected"
+        titleAccent="work"
+        description="Real outcomes for current clients—SaaS platforms, ecommerce, and web products—plus SoldTools, my live studio product for automotive sales teams."
       />
 
       <div className="mb-8 flex flex-wrap justify-center gap-2">
@@ -83,7 +84,7 @@ export default function PortfolioGrid() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project, i) => (
           <motion.div
-            key={`${project.title}-${project.type}`}
+            key={`${project.client ?? project.title}-${project.type}-${project.category}`}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
@@ -117,6 +118,11 @@ export default function PortfolioGrid() {
                   <Badge status={project.status} />
                 )}
               </div>
+              {project.client ? (
+                <p className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-text-secondary/90">
+                  {project.client}
+                </p>
+              ) : null}
               <h3 className="text-lg font-semibold text-text-primary">
                 {project.title}
               </h3>
