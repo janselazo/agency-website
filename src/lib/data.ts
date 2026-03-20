@@ -690,7 +690,7 @@ The pattern I see most often with projects that stall: the team agrees on a larg
 
 Phased delivery breaks this cycle. You ship early, adjust, and keep momentum. It's less dramatic than a big reveal, but it works.`,
   },
-];];
+];
 
 export interface ResourceItem {
   title: string;
