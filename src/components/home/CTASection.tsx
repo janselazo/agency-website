@@ -31,9 +31,9 @@ export default function CTASection() {
             <span className="mt-1 block text-accent">building</span>
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-text-secondary sm:text-base">
-            Share a short brief—problem, users, timeline—and I&apos;ll respond
-            with how I&apos;d approach discovery, a sensible first milestone, and
-            what “done” should mean.
+            Share a short brief — what the product does, who uses it, and
+            your timeline. I&apos;ll respond with how I&apos;d approach it and
+            what a good first milestone looks like.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <Button href="/contact" variant="primary" size="lg">

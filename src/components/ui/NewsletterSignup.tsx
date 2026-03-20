@@ -75,12 +75,12 @@ export default function NewsletterSignup({ compact }: NewsletterSignupProps) {
           <span className={SECTION_EYEBROW_CLASSNAME}>Newsletter</span>
         </div>
         <h3 className="heading-display text-xl font-bold tracking-tight text-text-primary sm:text-2xl lg:text-3xl">
-          <span className="block">Practical notes on</span>
-          <span className="mt-1 block text-accent">AI product development</span>
+          <span className="block">Notes on</span>
+          <span className="mt-1 block text-accent">building software</span>
         </h3>
         <p className="mt-2 text-sm text-text-secondary">
-          Occasional writing on agents, shipping, and what holds up in
-          production—no fluff.
+          Occasional writing on shipping products, working with clients, and
+          what I&apos;m learning as I add AI to the toolkit.
         </p>
         {status === "success" ? (
           <p className="mt-6 text-sm text-accent-violet">

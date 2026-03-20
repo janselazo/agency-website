@@ -23,7 +23,7 @@ export default function ServicesHero() {
           transition={{ duration: 0.5, delay: 0.06 }}
           className="heading-display text-4xl font-bold leading-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          Custom AI software
+          Custom software
           <br />
           <span className="text-accent">built for your product</span>
         </motion.h1>
@@ -34,9 +34,8 @@ export default function ServicesHero() {
           transition={{ duration: 0.45, delay: 0.14 }}
           className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg"
         >
-          From AI-powered web and mobile apps to websites, online stores, and
-          agent-based automations—scoped so your team can run and extend what we
-          ship.
+          Web apps, SaaS platforms, ecommerce stores, mobile apps, and internal
+          tools — scoped so your team can run and extend what we ship.
         </motion.p>
 
         <motion.p

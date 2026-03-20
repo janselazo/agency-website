@@ -56,7 +56,7 @@ export default function ResourcesGrid({
         <SectionHeading
           label="Resources"
           title="Go deeper on"
-          titleAccent="AI software & agents"
+          titleAccent="how I work"
           description="Writing, selected work, how engagements work, the studio product, and ways to follow along."
         />
       )}

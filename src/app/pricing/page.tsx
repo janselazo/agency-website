@@ -9,7 +9,7 @@ import CTASection from "@/components/home/CTASection";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "AI software development and AI solutions deployment: flexible consultancy, PoC, production, and enterprise programs—from $100–150/h T&M to fixed-phase packages.",
+    "custom software development and AI solutions deployment: flexible consultancy, PoC, production, and enterprise programs—from $100–150/h T&M to fixed-phase packages.",
 };
 
 export default function PricingPage() {

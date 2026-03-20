@@ -18,7 +18,7 @@ export default function PricingHero() {
           transition={{ duration: 0.45 }}
           className="mb-5 inline-block text-xs font-semibold uppercase tracking-widest text-accent"
         >
-          AI software & deployment
+          Pricing
         </motion.span>
 
         <motion.h1
@@ -29,7 +29,7 @@ export default function PricingHero() {
         >
           Transparent pricing for
           <br />
-          <span className="text-accent">AI builds & rollout</span>
+          <span className="text-accent">custom software</span>
         </motion.h1>
 
         <motion.p
@@ -38,9 +38,9 @@ export default function PricingHero() {
           transition={{ duration: 0.45, delay: 0.14 }}
           className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-text-secondary"
         >
-          Custom AI software development and solutions deployment—structured
-          like product engineering, with clear phases from strategy through
-          production. Hourly execution when you need flexibility:{" "}
+          Custom software development structured like product engineering —
+          clear phases from discovery through production. Hourly execution when
+          you need flexibility:{" "}
           <span className="font-medium text-text-primary">$100–150/h</span>.
         </motion.p>
       </div>

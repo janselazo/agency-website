@@ -15,15 +15,15 @@ const clients = [
 
 export default function Hero() {
   return (
-    <section className="hero-sky relative flex min-h-screen items-center justify-center overflow-hidden pt-28 pb-16">
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+    <section className="hero-sky relative flex min-h-screen flex-col overflow-hidden pt-28 pb-8">
+      <div className="relative z-10 mx-auto flex w-full max-w-4xl flex-1 flex-col justify-center px-6 pb-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55 }}
         >
           <span className={`mb-5 ${SECTION_EYEBROW_CLASSNAME}`}>
-            Custom AI software development and AI agents
+            Custom software development
           </span>
         </motion.div>
 
@@ -34,19 +34,29 @@ export default function Hero() {
           className="heading-display text-4xl font-bold leading-[1.15] text-text-primary sm:text-5xl sm:leading-[1.12] lg:text-6xl lg:leading-[1.1]"
         >
           <span className="block">
-            Custom AI software development{" "}
-            <span className="text-accent">and AI agents</span>
+            I build the software{" "}
+            <span className="text-accent">your product needs</span>
           </span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.16 }}
-          className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-text-secondary sm:text-lg"
+          transition={{ duration: 0.5, delay: 0.12 }}
+          className="mx-auto mt-4 max-w-2xl text-lg font-medium leading-snug text-text-secondary sm:text-xl"
         >
-          I design and ship AI that runs in your real product—web, mobile, and
-          agents tied to your data. You get working software and code you own.
+          Web apps, SaaS platforms, ecommerce stores, and the AI features that
+          are starting to matter.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-text-secondary sm:text-lg"
+        >
+          Nine years of shipping custom software for startups and growing teams.
+          You get working code, clean handoffs, and a product your team can run.
         </motion.p>
 
         <motion.div
@@ -102,7 +112,7 @@ export default function Hero() {
           className="mt-16"
         >
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-secondary/80">
-            Trusted by teams shipping AI
+            Built for
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             {clients.map((client) => (
@@ -115,21 +125,21 @@ export default function Hero() {
             ))}
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.45 }}
-          className="mt-14 flex justify-center pb-2 md:mt-16"
-        >
-          <div className="flex flex-col items-center gap-2">
-            <span className="text-[10px] font-semibold uppercase tracking-widest text-text-secondary/50">
-              Scroll
-            </span>
-            <div className="h-6 w-px rounded-full bg-gradient-to-b from-accent/50 to-transparent" />
-          </div>
-        </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.1, duration: 0.45 }}
+        className="relative z-10 flex shrink-0 justify-center pb-1"
+      >
+        <div className="flex flex-col items-center gap-2">
+          <span className="text-[10px] font-semibold uppercase tracking-widest text-text-secondary/50">
+            Scroll
+          </span>
+          <div className="h-6 w-px rounded-full bg-gradient-to-b from-accent/50 to-transparent" />
+        </div>
+      </motion.div>
     </section>
   );
 }

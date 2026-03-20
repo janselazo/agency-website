@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Janse Lazo — software engineer with an MBA, product growth experience, Zenpho and custom AI software. Miami, FL.",
+    "Janse Lazo — software engineer with an MBA, nine years building custom products. Miami, FL.",
 };
 
 const highlights = [
@@ -34,17 +34,16 @@ export default function AboutPage() {
           align="left"
           label="Story"
           title="From strong foundations to"
-          titleAccent="product-led growth"
-          description="My path is shaped by engineering at CUJAE, an MBA, and building software businesses in the U.S.—with strong experience in product growth, GTM, and products that scale so teams can run them after launch."
+          titleAccent="shipping software"
+          description="My path is shaped by engineering at CUJAE, an MBA, and building software businesses in the U.S. — with real experience in product growth and products that scale so teams can run them after launch."
         />
         <Card className="border-border/80 bg-white p-8 shadow-soft sm:p-10">
           <p className="text-base leading-relaxed text-text-secondary">
-            I care about the full stack of building: not only code and models,
-            but how software reaches users, earns trust, and compounds through
-            distribution and clear positioning. That lens shows up in how I
-            scope AI features, ship web and mobile apps, and partner with
-            founders and operators who need outcomes—not experiments stuck in
-            slides.
+            I care about the full stack of building: not only code, but how
+            software reaches users, earns trust, and grows through clear
+            positioning and real distribution. That lens shows up in how I scope
+            features, ship web and mobile apps, and partner with founders and
+            operators who need outcomes — not experiments stuck in slides.
           </p>
           <p className="mt-6 text-base leading-relaxed text-text-secondary">
             One chapter that cemented that for me was{" "}
@@ -65,9 +64,9 @@ export default function AboutPage() {
             ,{" "}
             <span className="font-medium text-text-primary">NASA</span>, and{" "}
             <span className="font-medium text-text-primary">RP Realty</span>
-            —alongside thousands of SMBs. That mix of household names, public
+            — alongside thousands of SMBs. That mix of household names, public
             institutions, and high-volume SMB taught me how to tighten
-            onboarding, keep product and GTM aligned, and ship when the story
+            onboarding, keep product and growth aligned, and ship when the story
             and the software both have to hold up in the room.
           </p>
         </Card>
@@ -77,27 +76,24 @@ export default function AboutPage() {
         <SectionHeading
           align="left"
           label="Today"
-          title="Zenpho & client"
-          titleAccent="work"
-          description="Through Zenpho and direct engagements, I combine high-visibility music and entertainment promotion with custom AI software and agents—guardrails, integrations, and interfaces teams actually use."
+          title="Client work &"
+          titleAccent="SoldTools"
+          description="I build custom software for startups and growing teams, and ship my own product on the side — a toolkit for car sales professionals."
         />
         <Card className="border-border/80 bg-white p-8 shadow-soft sm:p-10">
           <p className="text-base leading-relaxed text-text-secondary">
-            With Zenpho, I&apos;ve worked with recognized artists including{" "}
-            <span className="font-medium text-text-primary">Marc Anthony</span>
-            ,{" "}
-            <span className="font-medium text-text-primary">Fonseca</span>,{" "}
-            <span className="font-medium text-text-primary">Gente de Zona</span>
-            , <span className="font-medium text-text-primary">Guaco</span>, and{" "}
-            <span className="font-medium text-text-primary">Los Van Van</span>
-            —promoting their music launches, concert tours and live shows
-            (giras), and video campaigns.
+            Most of my time goes to client engagements — SaaS platforms,
+            ecommerce stores, dashboards, and internal tools for teams that need
+            focused execution. I work across the full stack: scoping, design,
+            implementation, and handoff.
           </p>
           <p className="mt-6 text-base leading-relaxed text-text-secondary">
-            Whether it is LLM-powered apps, automation, or mobile and web
-            surfaces tied to your data, the goal is the same: ship something
-            measurable, maintainable, and aligned with how your business
-            already works.
+            Alongside client work, I build and run{" "}
+            <span className="font-medium text-text-primary">SoldTools</span> — a
+            live product for car sales teams that handles lead capture,
+            scheduling, deal intelligence, and referrals. Building my own product
+            keeps me honest about what it takes to ship and maintain software
+            long-term.
           </p>
           <div className="mt-8">
             <Button href="/contact" variant="primary" size="md">
@@ -113,7 +109,7 @@ export default function AboutPage() {
           label="Highlights"
           title="Selected"
           titleAccent="milestones"
-          description="A few public touchpoints from entrepreneurship, community, and media—titles as listed on my public profile."
+          description="A few public touchpoints from entrepreneurship, community, and media."
         />
         <ul className="space-y-4">
           {highlights.map((item) => (
@@ -132,7 +128,7 @@ export default function AboutPage() {
           label="Credentials"
           title="Trust"
           titleAccent="& craft"
-          description="MBA plus marketing and growth-platform certifications I maintain alongside hands-on engineering—useful when AI products need to connect to campaigns, funnels, and analytics."
+          description="MBA plus marketing and growth-platform certifications I maintain alongside hands-on engineering — useful when products need to connect to campaigns, funnels, and analytics."
         />
         <div className="flex flex-wrap gap-3">
           {credentials.map((c) => (

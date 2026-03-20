@@ -28,8 +28,8 @@ export default function StudioHero() {
           transition={{ duration: 0.5, delay: 0.06 }}
           className="heading-display text-4xl font-bold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          <span className="block">Personal projects,</span>
-          <span className="mt-1 block text-accent">products & experiments</span>
+          <span className="block">Products I build</span>
+          <span className="mt-1 block text-accent">on my own time</span>
         </motion.h1>
 
         <motion.p
@@ -38,9 +38,9 @@ export default function StudioHero() {
           transition={{ duration: 0.45, delay: 0.14 }}
           className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg"
         >
-          This is where I ship my own products—right now that&apos;s SoldTools
-          for car sales teams. For custom builds for your company, start from
-          Services or get in touch.
+          SoldTools is my live product for car sales teams — lead capture,
+          scheduling, deal intelligence, and referrals. For custom work for
+          your company, start from Services.
         </motion.p>
 
         <motion.div
@@ -53,7 +53,7 @@ export default function StudioHero() {
             Browse projects
           </Button>
           <Button href="/contact" variant="dark" size="lg" showLiveDot>
-            Custom AI for your team
+            Custom software for your team
           </Button>
         </motion.div>
       </div>

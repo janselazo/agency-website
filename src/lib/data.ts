@@ -89,62 +89,62 @@ export interface ServicePackage {
 
 export const services: Service[] = [
   {
-    title: "AI development for web apps",
+    title: "SaaS & web applications",
     description:
-      "Custom web applications with AI at the core: agents, RAG, copilots, and dashboards your team uses daily—not bolt-on demos.",
+      "Custom web applications your team and customers use daily — dashboards, account management, workflows, and the integrations that tie them to your business.",
     details: [
-      "LLM features, tool use, retrieval, and structured outputs in the browser",
-      "Admin consoles, internal ops tools, and customer-facing SaaS surfaces",
-      "APIs, auth, and observability suited to production model calls",
-      "Guardrails, evaluation hooks, and cost-aware architecture",
+      "Authenticated experiences with role-based access and permissions",
+      "Admin consoles, internal tools, and customer-facing product surfaces",
+      "API design, third-party integrations, and data layer architecture",
+      "Deployment, monitoring, and iteration after launch",
     ],
     icon: "code",
   },
   {
-    title: "iOS & Android apps",
+    title: "Ecommerce & online stores",
     description:
-      "Native and cross-platform mobile products with AI where it helps: on-device patterns, secure sync, and polished App Store delivery.",
-    details: [
-      "Swift/Kotlin and React Native paths depending on your constraints",
-      "AI-assisted flows: capture, summarization, recommendations, voice-ready UX",
-      "Push, offline-first patterns, and enterprise MDM considerations",
-      "Store submission, analytics, and iteration after launch",
-    ],
-    icon: "rocket",
-  },
-  {
-    title: "Website development",
-    description:
-      "Fast, credible marketing and content sites—performance, SEO-friendly structure, and integrations to your stack.",
-    details: [
-      "Next.js / modern static and dynamic patterns",
-      "CMS, forms, CRM, and analytics wired the way your GTM team needs",
-      "Optional AI search, chat, or content workflows where they add real value",
-      "Accessibility and Core Web Vitals as defaults, not afterthoughts",
-    ],
-    icon: "compass",
-  },
-  {
-    title: "Store development",
-    description:
-      "Ecommerce and online store builds: Shopify, headless commerce, or custom checkout flows with catalog, payments, and ops integrations.",
+      "Online stores with catalog management, checkout, payments, and back-office tooling — so marketing and fulfillment can run without waiting on engineering.",
     details: [
       "Shopify themes, custom storefronts, or fully custom carts",
-      "Inventory, tax, shipping, and marketplace connector patterns",
-      "AI merchandising, support assistants, and personalized journeys",
-      "Conversion-focused UX and analytics from day one",
+      "Product pages, inventory, tax, and shipping integrations",
+      "Mobile-first checkout and conversion-focused UX",
+      "Merchandising tools the team can operate day to day",
     ],
     icon: "store",
   },
   {
-    title: "AI solutions",
+    title: "Mobile apps",
     description:
-      "End-to-end AI solutions—especially autonomous and semi-autonomous agents that connect to your data, tools, and approval paths.",
+      "Native and cross-platform mobile products — React Native or Swift/Kotlin depending on your constraints. App Store submission, push, offline support, and iteration after launch.",
     details: [
-      "Multi-step agents with tools, memory, and human-in-the-loop checkpoints",
-      "Workflow automation across CRM, docs, ticketing, and internal APIs",
-      "RAG, fine-tuning, and model routing when quality demands it",
-      "Security reviews, logging, and runbooks your team can operate",
+      "React Native for cross-platform or Swift/Kotlin for native",
+      "Push notifications, offline-first patterns, and background sync",
+      "App Store and Play Store submission and review process",
+      "Analytics, crash reporting, and post-launch iteration",
+    ],
+    icon: "rocket",
+  },
+  {
+    title: "Websites & marketing sites",
+    description:
+      "Fast, well-built marketing and content sites. SEO-friendly, CMS-integrated, and wired to your analytics and CRM.",
+    details: [
+      "Next.js and modern static/dynamic rendering patterns",
+      "CMS, forms, CRM, and analytics wired for your GTM team",
+      "Accessibility and Core Web Vitals as defaults, not afterthoughts",
+      "Content workflows that let non-technical teammates publish",
+    ],
+    icon: "compass",
+  },
+  {
+    title: "AI features & integrations",
+    description:
+      "A growing part of what I build: LLM-powered features, search, automation, and retrieval added to products where they solve a real problem — not bolted on for the sake of it.",
+    details: [
+      "OpenAI and Anthropic integrations with structured outputs",
+      "Search, summarization, and retrieval features in existing apps",
+      "Workflow automation tied to your data and internal tools",
+      "Evaluation, guardrails, and cost-aware architecture",
     ],
     icon: "brain",
   },
@@ -155,25 +155,25 @@ export const processSteps: ProcessStep[] = [
     number: "01",
     title: "Discovery",
     description:
-      "We align on users, constraints, and success metrics—especially around data, compliance, and how AI should behave in the real world.",
+      "We align on users, constraints, and what success looks like — before anyone writes code.",
   },
   {
     number: "02",
     title: "Design & architecture",
     description:
-      "Solution design covers UX, APIs, model boundaries, evaluation, and how the system fails safely when models or integrations misbehave.",
+      "Solution design covers UX, APIs, data models, and how the system should handle edge cases and failures.",
   },
   {
     number: "03",
     title: "Build & iterate",
     description:
-      "Short cycles with visible progress: working software, traced prompts and tools, and feedback from your team—not slide decks.",
+      "Short cycles with visible progress: working software, feedback from your team, and adjustments along the way — not slide decks.",
   },
   {
     number: "04",
     title: "Launch & handoff",
     description:
-      "Production rollout with monitoring, cost and quality dashboards, documentation, and a clear path for your team to operate and extend.",
+      "Production rollout with monitoring, documentation, and a clear path for your team to operate and extend what we built.",
   },
 ];
 
@@ -377,9 +377,9 @@ export const methodologyPillars: MethodologyPillar[] = [
 ];
 
 export const experienceStats = [
-  { value: "50+", label: "Projects delivered" },
+  { value: "15+", label: "Projects shipped" },
   { value: "9+", label: "Years building software" },
-  { value: "30+", label: "Client teams" },
+  { value: "10+", label: "Client teams" },
   { value: "1", label: "Live studio product" },
 ];
 
@@ -387,14 +387,14 @@ export const pricingTiers: PricingTier[] = [
   {
     name: "Flexible consultancy",
     description:
-      "Senior guidance on AI software strategy, architecture, and what to build first—before you lock in a full engagement.",
+      "Senior guidance on software strategy, architecture, and what to build first — before you commit to a full engagement.",
     price: "From $3K",
     priceNote: "flexible hours",
     features: [
       "10+ hours you can use across strategy and review",
       "Direct access to a senior engineer (me)",
       "Architecture & feasibility review",
-      "Model, vendor, and tooling evaluation",
+      "Technology and tooling evaluation",
       "Clear “what next?” roadmap",
     ],
     highlighted: false,
@@ -403,7 +403,7 @@ export const pricingTiers: PricingTier[] = [
   {
     name: "Proof of concept",
     description:
-      "Validate the riskiest technical assumptions with a working slice—real data path, real integrations, not a slide deck.",
+      "Validate the riskiest assumptions with a working slice — real data, real integrations, not a slide deck.",
     price: "$20K – $30K",
     priceNote: "typical range",
     features: [
@@ -419,15 +419,15 @@ export const pricingTiers: PricingTier[] = [
   {
     name: "Production ready",
     description:
-      "Full custom AI software: implementation, integration, deployment, and handoff so your team can run it in production.",
+      "Full custom software: implementation, integration, deployment, and handoff so your team can run it in production.",
     price: "$50K – $150K",
     priceNote: "typical range",
     features: [
       "Roughly 3–4 month timeline (scope-dependent)",
-      "End-to-end build: app, APIs, agents, workflows",
-      "Integration with your stack and data boundaries",
-      "Training, documentation, and operator handoff",
-      "Performance, reliability, and cost-aware tuning",
+      "End-to-end build: app, APIs, integrations, workflows",
+      "Integration with your existing stack and data",
+      "Training, documentation, and team handoff",
+      "Performance, reliability, and production tuning",
       "Post-launch stabilization period",
     ],
     highlighted: true,
@@ -437,7 +437,7 @@ export const pricingTiers: PricingTier[] = [
   {
     name: "Enterprise scale",
     description:
-      "Larger programs: multiple systems, stricter governance, and ongoing optimization across workstreams.",
+      "Larger programs: multiple systems, phased releases, and ongoing optimization across workstreams.",
     price: "$150K – $300K+",
     priceNote: "program-based",
     features: [
@@ -455,14 +455,14 @@ export const pricingTiers: PricingTier[] = [
 
 export const servicePackages: ServicePackage[] = [
   {
-    title: "AI discovery & architecture",
+    title: "Discovery & architecture",
     description:
-      "Align on use cases, data reality, model choices, and risks before you fund a larger build—so scope matches what’s feasible.",
+      "Align on users, constraints, and risks before you fund a larger build — so scope matches what’s feasible.",
     icon: "brain",
     deliverables: [
       "Stakeholder workshops and success criteria",
       "Target architecture & integration map",
-      "Model / vendor shortlist with tradeoffs",
+      "Technology shortlist with tradeoffs",
       "Written feasibility, risks, and “go / no-go” notes",
     ],
     timeline: "Typically 2–3 weeks",
@@ -470,13 +470,13 @@ export const servicePackages: ServicePackage[] = [
   {
     title: "Build, integrate & deploy",
     description:
-      "Implementation of agents, APIs, apps, and automations with production deployment, observability, and guardrails.",
+      "Implementation of apps, APIs, and integrations with production deployment, monitoring, and documentation.",
     icon: "rocket",
     deliverables: [
       "Incremental releases toward staging / production",
       "Integration with auth, data stores, and internal APIs",
       "Evaluation hooks, logging, and basic monitoring",
-      "Security-conscious defaults on AI and tool paths",
+      "Security-conscious defaults on all integration paths",
     ],
     timeline: "Scoped to PoC or production tier",
   },
@@ -507,208 +507,190 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "why-growth-mindset-matters-in-software",
-    title: "Why Growth Mindset Matters More Than Your Tech Stack",
+    slug: "nine-years-shipping-custom-software",
+    title: "What I've Learned from Nine Years of Shipping Custom Software",
     excerpt:
-      "The frameworks you choose matter less than how you architect for change. Here's how I embed growth thinking into every project from day one.",
+      "The technical decisions matter less than you think. What actually determines whether a project ships well comes down to a few things most engineers overlook.",
     date: "2026-03-01",
     readTime: "6 min read",
-    category: "Methodology",
-    content: `The tech industry obsesses over stack choices. React vs. Vue. PostgreSQL vs. MongoDB. AWS vs. GCP. But after 9+ years of building software that scales, I've learned that the most important decision isn't which tools you pick — it's whether your architecture can evolve when your assumptions change.
+    category: "Engineering",
+    content: `After nine years of building custom software for startups and growing teams, the lessons that stick aren't about frameworks or architecture patterns. They're about the unglamorous stuff that determines whether a project actually ships and survives contact with real users.
 
-## The Growth Mindset in Engineering
+## Understand the business before you write code
 
-Growth mindset in software isn't about positive thinking. It's a concrete set of engineering practices:
+The single biggest predictor of project success isn't technical skill — it's how well you understand what the client's business actually needs. I've watched talented engineers build beautiful systems that solved the wrong problem because nobody slowed down to ask the right questions in week one.
 
-**1. Design for extension, not perfection.**
-Every module I build has clear boundaries and interfaces. When requirements change (and they always do), I extend rather than rewrite. This means modular architectures, well-defined APIs, and database schemas with room to breathe.
+Every project I take on now starts with discovery: who are the users, what does success look like, and what constraints are non-negotiable? It sounds obvious, but skipping this step is the most common and most expensive mistake I see.
 
-**2. Instrument everything.**
-You can't improve what you can't measure. From the very first sprint, I bake in analytics, error tracking, and performance monitoring. This isn't overhead — it's the foundation for every future optimization.
+## Scope tightly, then tighter
 
-**3. Ship small, learn fast.**
-The biggest risk in software isn't a bug in production — it's building the wrong thing. I ship the smallest meaningful increment, measure its impact, and let data drive the next iteration.
+Clients almost always want more than they need for launch. My job is to find the smallest version of the product that proves the core value — and ship that first. The features you leave out of v1 are just as important as the ones you include.
 
-## What This Looks Like in Practice
+I've learned this the hard way. Early in my career, I'd agree to ambitious scopes and then scramble to deliver. Now I push back on scope before the first commit. It makes the work better and the relationship healthier.
 
-When I built a legal AI platform for a top-tier law firm, I didn't try to automate everything at once. I started with contract clause extraction — one narrow, high-value use case. Within 3 weeks, lawyers were using it daily. Within 3 months, I'd expanded to risk analysis, obligation tracking, and multi-document comparison.
+## Handoffs are the real deliverable
 
-The architecture supported this expansion because I'd designed for it from the start. Not by over-engineering, but by making extension cheap and safe.
+Code that only I can maintain isn't a product — it's a dependency. Every project I ship includes documentation, clear architecture decisions, and patterns that the client's team can extend. The measure of a good engagement isn't how impressive the code is — it's how smoothly the client can operate without me.
 
-## The Takeaway
+## Technology choices should be boring
 
-Your tech stack is a tool. Your growth mindset is a strategy. Invest in architecture that bends, teams that learn, and processes that compound improvements over time.
+I use Next.js, React, TypeScript, PostgreSQL, and a handful of well-understood tools for almost everything. Not because they're trendy, but because they're predictable. When you're building for a client, surprises are expensive. Boring technology that ships reliably beats exciting technology that introduces unknown risks.
 
-That's my approach.`,
+## The pattern that keeps showing up
+
+The projects that go well share a few traits: tight scope, honest communication, and a builder who cares about what happens after launch. The ones that struggle usually have too much scope, too little alignment, or an engineer who's more interested in the technology than the outcome.
+
+Nine years in, that's the lesson I keep re-learning.`,
   },
   {
-    slug: "ai-agents-practical-guide",
-    title: "AI Agents in Production: A Practical Guide for 2026",
+    slug: "adding-ai-to-my-toolkit-honestly",
+    title: "Why I'm Adding AI to My Toolkit (Honestly)",
     excerpt:
-      "Beyond the hype — what actually works when deploying AI agents in real business workflows. Lessons from 20+ agent deployments.",
+      "I'm a traditional software builder learning to use AI where it helps. Here's what I've found actually works, what's hype, and how I think about it.",
     date: "2026-02-18",
-    readTime: "8 min read",
-    category: "AI Engineering",
-    content: `AI agents are the most overhyped and most underestimated technology of 2026. The gap between demo-ware and production-ready agents is enormous — and most teams learn this the hard way.
-
-## What I've Learned from 20+ Deployments
-
-After shipping AI agents across legal, fintech, healthcare, and e-commerce, here are the patterns that actually work:
-
-**Start narrow, expand gradually.**
-The most successful agents do one thing exceptionally well. A contract review agent. An expense categorization agent. A customer support triage agent. Resist the temptation to build a "general purpose" agent.
-
-**Build guardrails before capabilities.**
-Every agent needs output validation, human-in-the-loop checkpoints, and fallback paths. The first thing I build isn't the agent — it's the safety net.
-
-**Optimize for latency, not just accuracy.**
-A 98% accurate agent that responds in 2 seconds beats a 99.5% accurate agent that takes 30 seconds. Users will tolerate occasional errors far more than consistent slowness.
-
-## The Architecture Pattern
-
-My standard agent architecture looks like this:
-
-1. **Intent classifier** — understands what the user is asking
-2. **Tool router** — selects the right tool/API for the task
-3. **Execution engine** — runs the action with proper error handling
-4. **Output validator** — checks the result before returning to the user
-5. **Feedback loop** — logs everything for continuous improvement
-
-Each layer is independently testable, replaceable, and monitorable. When a new LLM drops, I swap the model — not the architecture.
-
-## Common Pitfalls
-
-- **Over-relying on prompting:** Prompt engineering hits a ceiling. At some point, you need better tools and retrieval, not longer prompts.
-- **Ignoring cost:** A single complex agent call can cost $0.50+ in API fees. At scale, architecture decisions become cost decisions.
-- **Skipping evaluation:** If you can't measure agent quality systematically, you can't improve it systematically.
-
-The companies winning with AI agents in 2026 are the ones treating them as engineering problems, not magic.`,
-  },
-  {
-    slug: "mvp-mistakes-founders-make",
-    title: "5 MVP Mistakes That Kill Startups Before Launch",
-    excerpt:
-      "Most MVPs fail not because of bad ideas, but because of bad execution. Here are the traps I see founders fall into — and how to avoid them.",
-    date: "2026-02-05",
-    readTime: "5 min read",
-    category: "Startups",
-    content: `I've built 50+ MVPs. Some became funded startups. Some pivoted into something better. A few didn't make it. The difference almost never comes down to the idea — it comes down to execution.
-
-## Mistake #1: Building Too Much
-
-The "minimum" in MVP exists for a reason. I regularly see founders with 30-feature specs for their "MVP." The result? Six months of development, a bloated product, and no market validation.
-
-**Fix:** Define the one core workflow that proves your thesis. Build that. Ship it. Learn.
-
-## Mistake #2: Choosing Tech for Scale Day One
-
-You don't need Kubernetes. You don't need microservices. You don't need a data lake. Not yet. Over-engineering your infrastructure burns cash and slows you down when speed is your only competitive advantage.
-
-**Fix:** Start with a monolith. Use managed services. Optimize for developer velocity, not theoretical scale.
-
-## Mistake #3: Skipping Design
-
-"We'll make it pretty later" is a death sentence. Users form opinions in milliseconds. A functional but ugly MVP signals "amateur." You don't need a design system — you need intentional, clean design on your core screens.
-
-**Fix:** Invest 1-2 weeks in UI/UX for your critical path. Use a component library. Make it feel professional.
-
-## Mistake #4: No Analytics From Day One
-
-If you launch without analytics, you're flying blind. Every click, every drop-off, every conversion — this data is the entire point of an MVP.
-
-**Fix:** Set up event tracking before launch. Define your key metrics. Build a dashboard you check daily.
-
-## Mistake #5: Building in Isolation
-
-The founders who succeed talk to users before, during, and after building. The ones who disappear into a cave for 6 months usually emerge with a product nobody wants.
-
-**Fix:** Share early. Get feedback weekly. Let user behavior — not your assumptions — guide the roadmap.
-
-Building an MVP is an exercise in disciplined restraint. Build less, learn more, iterate faster. That's how startups win.`,
-  },
-  {
-    slug: "building-studio-ventures",
-    title: "Inside My Studio: How I Choose What to Build",
-    excerpt:
-      "A behind-the-scenes look at how I identify opportunities, validate ideas, and go from concept to product.",
-    date: "2026-01-20",
     readTime: "7 min read",
-    category: "Studio",
-    content: `Running an agency and a venture studio simultaneously gives me an unfair advantage: I see problems across dozens of industries every year. The best studio ideas don't come from brainstorming sessions — they come from patterns I notice while building for clients.
+    category: "AI & Software",
+    content: `I'm not an AI researcher. I don't have 20+ agent deployments under my belt. I'm a software engineer who's been building web apps, SaaS platforms, and ecommerce stores for nine years — and I'm now figuring out where AI genuinely helps in that work.
 
-## The Opportunity Filter
+I'm writing this because most AI content online falls into two camps: breathless hype from people selling AI services, or deep technical content from ML engineers. There's not much written for builders like me — people who ship products and want to know where AI fits in honestly.
 
-Not every good idea deserves to become a product. I filter opportunities through four lenses:
+## What I've actually used AI for
 
-**1. Is there a 10x AI improvement possible?**
-If AI can only deliver a marginal improvement, it's not worth building a product around. I look for workflows where AI can fundamentally change the economics — 10x faster, 10x cheaper, 10x more accessible.
+So far, the AI features I've built or integrated into client projects are modest but real:
 
-**2. Is the market underserved?**
-I avoid crowded markets. Instead, I look for industries where the existing tools are outdated, fragmented, or built for a different era.
+**Search and retrieval.** Adding semantic search to an existing product so users can find things by meaning, not just keywords. This works well and is relatively straightforward to implement with embeddings and a vector store.
 
-**3. Can a small team win?**
-Some markets require enterprise sales teams, regulatory approvals, and massive capital. I target opportunities where a great product can win through self-serve adoption and word of mouth.
+**Content generation helpers.** Giving users a starting point for text fields — product descriptions, report summaries, form pre-fills. Not replacing human judgment, but reducing blank-page friction.
 
-**4. Do I have domain insight?**
-My agency work gives me deep exposure to specific industries. When I've seen the same problem across 5 different clients, that's a signal.
+**Structured data extraction.** Pulling structured information out of unstructured text — invoices, inspection reports, customer messages. This is where LLMs shine for me: messy real-world input, clean structured output.
 
-## From Idea to Venture
+## What I'm skeptical about
 
-Once an idea passes the filter, I follow a structured process:
+**Autonomous agents in production.** The demos are impressive, but giving an AI agent real authority over production systems still feels premature for most of the teams I work with. The failure modes are hard to predict and harder to debug.
 
-**Week 1-2: Thesis validation.** Research, user interviews, competitive analysis. The goal is to confirm or kill the idea quickly.
+**AI as a core value proposition.** For most products, AI is a feature, not the product. If the underlying software doesn't work well, adding AI won't save it.
 
-**Week 3-6: Prototype.** A working prototype that tests the core value proposition with real users. Not a landing page — an actual product.
+**Replacing developers.** AI makes me faster at certain tasks — boilerplate, research, debugging. But the hard parts of software engineering — understanding requirements, making architectural tradeoffs, communicating with stakeholders — are still entirely human problems.
 
-**Week 7-12: Beta.** Iterate based on real usage. Define metrics. Find product-market fit signals.
+## How I'm approaching it
 
-**Month 4+: Scale or sunset.** If the metrics are there, I invest. If not, I document the learnings and move on.
+I'm treating AI the way I'd treat any new technology: learn it by building with it, be honest about what I don't know, and only add it to client projects when it solves a real problem. I'm not going to reposition my entire practice around AI just because it's the current hype cycle.
 
-## The Portfolio Today
-
-- **SoldTools** (Live) — a production toolkit for car sales teams: lead capture, scheduling, deal intelligence, and referrals—shipping at app.soldtools.com.
-
-The studio isn't a side project — it's core to my work. Each product I ship adds to my thesis that focused software, with AI where it earns its place, can reshape how teams work day to day.`,
+The builders who will do well with AI are the ones who already know how to ship software. AI is a powerful new tool, but it doesn't replace the fundamentals.`,
   },
   {
-    slug: "technical-debt-startup-guide",
-    title: "Technical Debt Is Not the Enemy — Bad Debt Is",
+    slug: "lessons-from-taptok-growth",
+    title: "Lessons from Growing TapTok to 15,000 Customers",
     excerpt:
-      "Stop treating all technical debt as a failure. Strategic debt is a tool. Here's how to tell the difference and manage it intentionally.",
+      "The real story of scaling a product from zero to enterprise clients like AT&T, NASA, and Harvard — and what it taught me about building software that grows.",
+    date: "2026-02-05",
+    readTime: "6 min read",
+    category: "Product Growth",
+    content: `TapTok was the project that taught me the most about what happens after you ship. We grew it from zero to 15,000 customers, landing accounts at AT&T, Harvard University, NASA, Authentic Brands Group, and thousands of small businesses. The technical challenges were real, but the growth lessons were more valuable.
+
+## The product had to work for everyone
+
+Our customer base ranged from solo shop owners to enterprise teams with procurement processes and security reviews. Building for that range forced us to think carefully about onboarding, permissions, and how different users experience the same product.
+
+The biggest lesson: onboarding is the product. If someone can't get value in their first session, nothing else matters — not features, not performance, not design. We rewrote our onboarding three times before it worked.
+
+## Enterprise and SMB are different planets
+
+Selling to AT&T is nothing like selling to a local business. Enterprise needs security documentation, admin controls, and a sales process that can take months. SMBs need to sign up and get value in minutes.
+
+We made the mistake of trying to serve both with the same experience early on. Eventually we learned to create separate paths — self-serve for SMBs, high-touch for enterprise — while keeping the core product the same.
+
+## Growth comes from the product, not from marketing
+
+The channels that actually drove growth for us were referrals and word of mouth. Paid acquisition was expensive and the users it brought churned faster. The users who stuck were the ones who came because someone they trusted told them about it.
+
+This taught me that the best growth investment is making the product genuinely useful. Everything else — campaigns, content, partnerships — amplifies good product-market fit but can't create it.
+
+## What I carry forward
+
+TapTok shaped how I build software today. Every project I take on, I think about: how does this onboard? How does this scale from one user to a thousand? What happens when a team with different needs tries to use it?
+
+These aren't just product questions — they're architecture questions. The way you structure your database, your auth system, your API — all of it should account for growth, not just the current use case.`,
+  },
+  {
+    slug: "building-soldtools-alongside-client-work",
+    title: "Building SoldTools: Shipping Your Own Product Alongside Client Work",
+    excerpt:
+      "How I built and launched a live SaaS product for car sales teams while running client engagements — and what I'd do differently.",
+    date: "2026-01-20",
+    readTime: "6 min read",
+    category: "Studio",
+    content: `SoldTools is my own product — a toolkit for car sales professionals that handles lead capture, appointment scheduling, deal intelligence, and referrals. It's live at app.soldtools.com and being used by real salespeople.
+
+Building it alongside client work was one of the hardest things I've done. Here's what that actually looks like.
+
+## Why I built it
+
+Client work is rewarding, but it's always someone else's product. I wanted to experience the full cycle — identifying a problem, building the solution, getting it into users' hands, and iterating based on real feedback. SoldTools came from noticing that car sales teams were using a patchwork of spreadsheets, generic CRMs, and text messages to manage their pipeline.
+
+The existing tools weren't built for how car salespeople actually work. They needed something faster, simpler, and designed around the showroom workflow — not adapted from generic sales software.
+
+## The reality of building two things at once
+
+I won't sugarcoat it: it's hard. Client work pays the bills and deserves full attention. SoldTools gets evenings, weekends, and the gaps between engagements. There were months where it barely moved forward.
+
+What made it possible was keeping the scope small. SoldTools doesn't try to be a full CRM. It does a few things well — lead capture from multiple sources, scheduling, and deal tracking — and leaves the rest alone.
+
+## What I learned from being my own client
+
+Building your own product teaches you things client work can't. When you're the one fielding support requests and watching usage analytics, you develop a different relationship with the code. Every shortcut you took during development comes back to visit you personally.
+
+It also made me a better client-work builder. I'm more honest about timelines, more careful about documentation, and more focused on building things that can be maintained long-term.
+
+## What I'd do differently
+
+I'd ship even smaller. The first version of SoldTools had features nobody used because I assumed they'd be important. The features that actually stuck were the ones I built after watching salespeople use the early version.
+
+I'd also set clearer boundaries between client time and product time. In the beginning, I'd context-switch constantly, which made both worse. Now I batch my SoldTools work into dedicated blocks.
+
+SoldTools is still growing, and I'm still learning from it. That's the point.`,
+  },
+  {
+    slug: "how-i-scope-projects-to-ship",
+    title: "How I Scope Projects So They Actually Ship",
+    excerpt:
+      "Most software projects fail because of scope, not skill. Here's the process I use to keep builds focused and get them into production.",
     date: "2026-01-08",
     readTime: "5 min read",
-    category: "Engineering",
-    content: `"We need to pay down our technical debt" is the battle cry of every engineering team. But not all technical debt is created equal, and treating it as a monolithic problem leads to the wrong solutions.
+    category: "Process",
+    content: `The most common reason software projects fail isn't bad code or the wrong technology — it's scope. Too much of it, too vaguely defined, with too many stakeholders pulling in different directions. After years of watching this pattern, I've developed a process for scoping that keeps projects focused and shippable.
 
-## Good Debt vs. Bad Debt
+## Start with the outcome, not the feature list
 
-**Strategic debt** is intentional. You chose a simpler implementation because speed-to-market mattered more than architectural purity. You documented the trade-off. You have a plan to address it. This is like a business loan — leverage that accelerates growth.
+When a client comes to me, they usually have a list of features they want. My first job is to figure out what outcome those features are supposed to produce. Sometimes the feature list is right. More often, there's a simpler path to the same outcome.
 
-**Accidental debt** is unintentional. It accumulates from shortcuts nobody documented, patterns that diverged over time, and knowledge that left with former team members. This is like credit card debt — it compounds and suffocates.
+The question I always ask: "If this project is successful, what's different for your users in three months?" That answer becomes the north star. Every feature either serves it or doesn't.
 
-## The Framework I Use
+## Phase everything
 
-I categorize debt into four buckets:
+No matter the project size, I break it into phases. Phase one is always the smallest version that delivers real value. Not a prototype, not a demo — actual working software that real users can use.
 
-**1. Architecture debt** — Structural decisions that limit future capabilities. High impact, high cost to fix. Address before it blocks a critical initiative.
+This serves two purposes: it validates that we're building the right thing, and it builds trust. When a client sees working software in weeks instead of months, the rest of the engagement goes smoother.
 
-**2. Code quality debt** — Messy code that slows development. Medium impact, medium cost. Address incrementally during feature work.
+## Write down what you're not building
 
-**3. Dependency debt** — Outdated libraries, EOL frameworks, security vulnerabilities. Variable impact, usually manageable. Schedule regular updates.
+The most useful document in any project isn't the spec — it's the "out of scope" list. Explicitly naming the things you've decided not to build prevents scope creep and gives you something concrete to point to when new ideas come up mid-project.
 
-**4. Knowledge debt** — Undocumented systems, tribal knowledge, unclear ownership. Invisible until someone leaves. Address continuously.
+I keep this list visible and reference it in every status update. It's not about saying no to good ideas — it's about saying "not yet" so the current phase can ship cleanly.
 
-## Managing Debt Intentionally
+## Budget for the unknowns
 
-The goal isn't zero debt — it's intentional debt with a repayment plan:
+Every project has surprises — a third-party API that doesn't work as documented, a database migration that's more complex than expected, a user flow that needs rethinking after testing. I build buffer into every estimate, and I'm transparent with clients about it.
 
-- **Document every shortcut** at the time you take it. A TODO comment isn't documentation — an ADR is.
-- **Budget 20% of each sprint** for debt repayment. Non-negotiable. If you skip it, the compound interest will eat your velocity.
-- **Quantify the cost.** "This hack adds 2 hours to every deployment" is actionable. "We have tech debt" is not.
+The projects that ship on time aren't the ones with perfect estimates — they're the ones with honest estimates and a process for handling the inevitable surprises.
 
-Technical debt is a tool, not a failure. The founders and teams who manage it intentionally build faster and more sustainably than those who either avoid it completely or let it accumulate unchecked.`,
+## The common failure mode
+
+The pattern I see most often with projects that stall: the team agrees on a large scope, starts building, hits unexpected complexity in month two, and then spends months in a cycle of "almost done" without ever shipping. By the time something launches, the original requirements have changed and morale is low.
+
+Phased delivery breaks this cycle. You ship early, adjust, and keep momentum. It's less dramatic than a big reveal, but it works.`,
   },
-];
+];];
 
 export interface ResourceItem {
   title: string;
@@ -723,14 +705,14 @@ export const resourceItems: ResourceItem[] = [
   {
     title: "Blog",
     description:
-      "Articles on AI agents, production engineering, and shipping software that holds up after launch.",
+      "Writing on shipping software, working with clients, and lessons from nine years of building products.",
     href: "/blog",
     tag: "Writing",
   },
   {
     title: "Case studies",
     description:
-      "Selected client builds in production—agents, apps, and platforms.",
+      "Selected client builds in production — SaaS platforms, ecommerce stores, and dashboards.",
     href: "/case-studies",
     tag: "Work",
   },
@@ -744,21 +726,21 @@ export const resourceItems: ResourceItem[] = [
   {
     title: "Studio",
     description:
-      "SoldTools—live product for car sales teams—built alongside client work, separate from agency delivery.",
+      "SoldTools — a live product for car sales teams, built alongside client work.",
     href: "/studio",
     tag: "Product",
   },
   {
     title: "Newsletter",
     description:
-      "Short updates on agents, product craft, and what works in production—no fluff.",
+      "Occasional notes on shipping products, working with clients, and what I’m learning.",
     href: "/#newsletter",
     tag: "Subscribe",
   },
   {
     title: "LinkedIn",
     description:
-      "Follow for Zenpho, custom AI work, and growth topics—Miami / Fort Lauderdale.",
+      "Follow for updates on client work, SoldTools, and building software — Miami, FL.",
     href: "https://www.linkedin.com/in/janselazo",
     tag: "Profile",
     external: true,

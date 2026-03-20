@@ -16,8 +16,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-secondary">
-              Custom AI software development and AI agents—for web, mobile,
-              stores, and the workflows your team runs every day.
+              Custom software development — web apps, SaaS, ecommerce, and
+              the tools your team needs to ship.
             </p>
           </div>
 

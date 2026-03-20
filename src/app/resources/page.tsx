@@ -5,7 +5,7 @@ import ResourcesGrid from "@/components/resources/ResourcesGrid";
 export const metadata: Metadata = {
   title: "Resources",
   description:
-    "Resources from Janse Lazo: blog, case studies, pricing, Studio (personal projects), newsletter, and LinkedIn—custom AI software and agents.",
+    "Resources from Janse Lazo: blog, case studies, pricing, Studio (personal projects), newsletter, and LinkedIn—custom software and agents.",
 };
 
 export default function ResourcesPage() {

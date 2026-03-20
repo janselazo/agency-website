@@ -23,9 +23,9 @@ export default function CaseStudiesHero() {
           transition={{ duration: 0.5, delay: 0.06 }}
           className="heading-display text-4xl font-bold leading-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
-          AI software in
+          Software that
           <br />
-          <span className="text-accent">real deployments</span>
+          <span className="text-accent">shipped</span>
         </motion.h1>
 
         <motion.p
@@ -34,9 +34,8 @@ export default function CaseStudiesHero() {
           transition={{ duration: 0.45, delay: 0.14 }}
           className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-text-secondary sm:text-lg"
         >
-          Current client work—inspection SaaS, ecommerce, rally branding, and
-          AI-assisted products—plus studio experiments. Each card highlights
-          what shipped and the outcome we optimized for.
+          Client builds in production — SaaS platforms, ecommerce stores, and
+          dashboards. Each card covers what we built and how it turned out.
         </motion.p>
 
         <motion.div

@@ -7,31 +7,31 @@ import SectionHeading from "@/components/ui/SectionHeading";
 const faqs = [
   {
     q: "What do you actually build?",
-    a: "Custom AI software: agents and copilots, customer and internal chatbots, RAG and LLM integrations, workflow automation, and the web or mobile apps that wrap them. I also advise when you need ongoing technical direction without a full build.",
+    a: "Custom software: SaaS web apps, ecommerce stores, dashboards, mobile apps, and internal tools. I\u2019m increasingly building AI features into these \u2014 LLM integrations, automation, retrieval \u2014 but the foundation is always solid, shippable software.",
   },
   {
-    q: "Agency vs. studio—what’s the difference?",
-    a: "Agency work is for your roadmap: we scope, build, and hand off systems you own. Studio is where I originate and ship my own AI products, often informed by patterns I see across client work.",
+    q: "Agency vs. studio — what’s the difference?",
+    a: "Agency work is for your roadmap: we scope, build, and hand off systems you own. Studio is where I build my own products — right now that’s SoldTools for car sales teams.",
   },
   {
     q: "Do you only work with startups?",
-    a: "Most partners are funded startups or product-led teams, but engagements also include larger orgs that need a focused AI feature or internal tool delivered with startup speed.",
+    a: "Most clients are startups or small product teams, but I’ve also worked with larger organizations that need focused execution on a specific product or feature.",
   },
   {
     q: "How do projects usually start?",
-    a: "With a short discovery: users, constraints (security, compliance, latency, cost), and what “good” looks like. Then a phased plan—often a time-boxed PoC before a production roadmap.",
+    a: "A short conversation about your product, users, and timeline. Then a phased plan — often starting small to validate the approach before committing to a larger build.",
   },
   {
     q: "Can you work with our existing stack?",
-    a: "Yes. Integrations are a core part of the work—CRMs, data warehouses, identity, ticketing, and legacy APIs. Architecture is vendor-aware so you are not locked to one model provider.",
+    a: "Yes. I’ve integrated with CRMs, payment processors, third-party APIs, and legacy systems. I’ll work with what you have rather than push a rewrite.",
   },
   {
     q: "Where can I see pricing?",
-    a: "See the Pricing page for consultancy, PoC, production, and enterprise-style programs, plus $100–150/h time-and-materials. Exact quotes depend on scope—send a short brief and I’ll suggest a sensible next step.",
+    a: "The pricing page has consultancy, project, and retainer options. Exact quotes depend on scope — send a short brief and I’ll suggest a next step.",
   },
   {
     q: "Where are you based?",
-    a: "Remote-first, with hours aligned to US and European teams. I’ve collaborated across Silicon Valley, Europe, and Latin America.",
+    a: "Miami, FL. I work remotely and have collaborated with teams across the U.S. and Latin America. Bilingual — English and Spanish.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function HomeFAQ() {
         title="Common"
         titleAccent="questions"
         titleAccentInline
-        description="Straight answers about how I work with teams shipping AI into real products."
+        description="Straight answers about how I work with teams building software products."
       />
 
       <div className="mx-auto max-w-3xl space-y-3">

@@ -5,7 +5,7 @@ import ContactForm from "@/components/contact/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Janse Lazo. Whether you need a development partner or want to explore a collaboration on AI Growth & Development.",
+    "Get in touch with Janse Lazo — custom software development for startups and growing teams.",
 };
 
 export default function ContactPage() {

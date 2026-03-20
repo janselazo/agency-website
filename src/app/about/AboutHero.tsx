@@ -28,8 +28,8 @@ export default function AboutHero() {
         >
           <span className="block">Janse Lazo —</span>
           <span className="mt-1 block">
-            <span className="text-accent">custom AI software</span>
-            <span className="text-text-primary"> &amp; growth</span>
+            <span className="text-accent">software engineer</span>
+            <span className="text-text-primary"> &amp; builder</span>
           </span>
         </motion.h1>
 
@@ -39,10 +39,9 @@ export default function AboutHero() {
           transition={{ duration: 0.45, delay: 0.14 }}
           className="mx-auto mt-4 max-w-xl text-base text-text-secondary"
         >
-          I&apos;m a software engineer with an MBA, with real experience in
-          product growth as well as hands-on engineering—I build scalable
-          software and pair technical execution with distribution and
-          go-to-market. Bilingual (English / Spanish), based in Miami, FL 🏝️.
+          Software engineer with an MBA, nine years building custom products —
+          SaaS, ecommerce, mobile, and dashboards. Bilingual (English /
+          Spanish), based in Miami, FL.
         </motion.p>
       </div>
     </section>

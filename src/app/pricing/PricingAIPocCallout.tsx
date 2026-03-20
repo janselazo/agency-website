@@ -15,16 +15,15 @@ export default function PricingAIPocCallout() {
           className="rounded-3xl border border-border bg-white p-8 shadow-soft sm:p-10"
         >
           <p className="text-xs font-semibold uppercase tracking-wider text-accent">
-            AI projects
+            Complex projects
           </p>
           <h2 className="mt-3 heading-display text-2xl font-bold text-text-primary sm:text-3xl">
             Start with a proof of concept
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-text-secondary sm:text-base">
-            AI work is higher-variance than traditional software: models behave
-            differently on real data, edge cases show up late, and integration
-            cost is hard to estimate upfront. A focused PoC—often on the order
-            of roughly{" "}
+            Some projects carry more uncertainty than others — new integrations,
+            unfamiliar data, or complex workflows where edge cases show up late.
+            A focused PoC—often on the order of roughly{" "}
             <span className="font-medium text-text-primary">10% of a full
             program budget</span>
             —lets you validate feasibility, test with real users, and make a
@@ -46,7 +45,7 @@ export default function PricingAIPocCallout() {
           </ul>
           <div className="mt-8">
             <Button href="/contact" variant="primary" size="lg">
-              Discuss your AI project
+              Discuss your project
             </Button>
           </div>
         </motion.div>

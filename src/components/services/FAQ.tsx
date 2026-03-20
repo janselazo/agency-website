@@ -40,7 +40,7 @@ export default function FAQ() {
         label="FAQ"
         title="Common"
         titleAccent="questions"
-        description="How consultancy, PoC, production builds, and hourly work usually fit together."
+        description="How consultancy, project builds, and hourly work usually fit together."
       />
 
       <div className="mx-auto max-w-3xl space-y-3">

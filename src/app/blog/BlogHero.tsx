@@ -23,7 +23,7 @@ export default function BlogHero() {
           className="heading-display text-4xl font-bold leading-tight tracking-tight text-text-primary sm:text-5xl lg:text-6xl"
         >
           <span className="block">Notes on</span>
-          <span className="mt-1 block text-accent">shipping AI software</span>
+          <span className="mt-1 block text-accent">building software</span>
         </motion.h1>
 
         <motion.p
@@ -32,8 +32,8 @@ export default function BlogHero() {
           transition={{ duration: 0.45, delay: 0.14 }}
           className="mx-auto mt-4 max-w-xl text-base text-text-secondary"
         >
-          Engineering, evaluation, product craft, and the messy middle between
-          demo and production.
+          Engineering, product craft, and lessons from nine years of shipping
+          custom software for startups and growing teams.
         </motion.p>
       </div>
     </section>
