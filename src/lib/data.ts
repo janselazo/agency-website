@@ -79,88 +79,64 @@ export interface ServicePackage {
 
 export const services: Service[] = [
   {
-    title: "Custom AI Agents & Copilots",
+    title: "AI development for web apps",
     description:
-      "Autonomous and semi-autonomous assistants tailored to your tools, data, and approval workflows—not generic demos.",
+      "Custom web applications with AI at the core: agents, RAG, copilots, and dashboards your team uses daily—not bolt-on demos.",
     details: [
-      "Tool use, retrieval, and guardrails for production",
-      "Human-in-the-loop and audit-friendly outputs",
-      "Evaluation, monitoring, and cost controls",
-      "Integration with CRMs, docs, and internal APIs",
-    ],
-    icon: "brain",
-  },
-  {
-    title: "Conversational AI & Chatbots",
-    description:
-      "Customer-facing and internal assistants across web, mobile, and messaging channels with your brand voice.",
-    details: [
-      "Design, flows, and escalation paths",
-      "LLM-backed support and sales assistants",
-      "Omnichannel patterns (chat, SMS, voice-ready)",
-      "Analytics on deflection, CSAT, and handoffs",
-    ],
-    icon: "chat",
-  },
-  {
-    title: "Generative AI Integration",
-    description:
-      "Bring GPT-class models into your product safely: RAG, structured outputs, and enterprise patterns.",
-    details: [
-      "RAG over your documents and databases",
-      "Fine-tuning and prompt programs where it matters",
-      "Security, privacy, and compliance-oriented design",
-      "Vendor-agnostic architecture (OpenAI, Anthropic, open models)",
+      "LLM features, tool use, retrieval, and structured outputs in the browser",
+      "Admin consoles, internal ops tools, and customer-facing SaaS surfaces",
+      "APIs, auth, and observability suited to production model calls",
+      "Guardrails, evaluation hooks, and cost-aware architecture",
     ],
     icon: "code",
   },
   {
-    title: "Custom Software & Mobile",
+    title: "iOS & Android apps",
     description:
-      "Full-stack products your customers and teams actually use—clean UX, solid APIs, and cloud-native ops.",
+      "Native and cross-platform mobile products with AI where it helps: on-device patterns, secure sync, and polished App Store delivery.",
     details: [
-      "Web apps (Next.js, React) and APIs",
-      "iOS / Android and cross-platform where it fits",
-      "Microservices or pragmatic monoliths",
-      "CI/CD, observability, and on-call readiness",
+      "Swift/Kotlin and React Native paths depending on your constraints",
+      "AI-assisted flows: capture, summarization, recommendations, voice-ready UX",
+      "Push, offline-first patterns, and enterprise MDM considerations",
+      "Store submission, analytics, and iteration after launch",
     ],
     icon: "rocket",
   },
   {
-    title: "Workflow Automation & Internal Tools",
+    title: "Website development",
     description:
-      "Reduce manual work by connecting systems with reliable automations and operator-friendly admin UIs.",
+      "Fast, credible marketing and content sites—performance, SEO-friendly structure, and integrations to your stack.",
     details: [
-      "Back-office and operations dashboards",
-      "Scheduled jobs, queues, and integrations",
-      "Document and email pipelines",
-      "AI-assisted triage and routing",
-    ],
-    icon: "zap",
-  },
-  {
-    title: "AI Consulting, PoC & MVP Sprints",
-    description:
-      "When you need clarity before a big build: roadmaps, spikes, and time-boxed proofs of value.",
-    details: [
-      "Use-case discovery and feasibility studies",
-      "2–4 week PoCs with clear success metrics",
-      "MVP scopes for funded teams and founders",
-      "Vendor and model selection support",
+      "Next.js / modern static and dynamic patterns",
+      "CMS, forms, CRM, and analytics wired the way your GTM team needs",
+      "Optional AI search, chat, or content workflows where they add real value",
+      "Accessibility and Core Web Vitals as defaults, not afterthoughts",
     ],
     icon: "compass",
   },
   {
-    title: "Data, ML & Analytics Foundations",
+    title: "Store development",
     description:
-      "Pipelines and models that support AI features and reporting—without a science project in production.",
+      "Ecommerce and online store builds: Shopify, headless commerce, or custom checkout flows with catalog, payments, and ops integrations.",
     details: [
-      "Warehousing, ETL/ELT, and feature stores",
-      "Classical ML and forecasting where LLMs aren’t the answer",
-      "Dashboards and operational metrics",
-      "MLOps basics: versioning, deployment, monitoring",
+      "Shopify themes, custom storefronts, or fully custom carts",
+      "Inventory, tax, shipping, and marketplace connector patterns",
+      "AI merchandising, support assistants, and personalized journeys",
+      "Conversion-focused UX and analytics from day one",
     ],
-    icon: "chart",
+    icon: "store",
+  },
+  {
+    title: "AI solutions",
+    description:
+      "End-to-end AI solutions—especially autonomous and semi-autonomous agents that connect to your data, tools, and approval paths.",
+    details: [
+      "Multi-step agents with tools, memory, and human-in-the-loop checkpoints",
+      "Workflow automation across CRM, docs, ticketing, and internal APIs",
+      "RAG, fine-tuning, and model routing when quality demands it",
+      "Security reviews, logging, and runbooks your team can operate",
+    ],
+    icon: "brain",
   },
 ];
 
@@ -719,11 +695,11 @@ Technical debt is a tool, not a failure. The founders and teams who manage it in
 ];
 
 export const navLinks = [
-  { label: "Agency", href: "/agency" },
-  { label: "Studio", href: "/studio" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "Methodology", href: "/methodology" },
   { label: "Services", href: "/services" },
+  { label: "Case Studies", href: "/case-studies" },
+  { label: "Studio", href: "/studio" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "About me", href: "/about" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact Us", href: "/contact" },
 ];

@@ -18,15 +18,15 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Janse Lazo — Custom AI & Software Development",
+    default: "Janse Lazo — Custom AI Software & AI Agents",
     template: "%s | Janse Lazo",
   },
   description:
-    "Custom AI software development for teams that need production-ready agents, chatbots, integrations, and automation—plus advisory when you want a steady technical partner.",
+    "Custom AI software and AI agents for web and mobile: LLMs, RAG, automation, and integrations—built to ship and run in production.",
   openGraph: {
-    title: "Janse Lazo — Custom AI & Software Development",
+    title: "Janse Lazo — Custom AI Software & AI Agents",
     description:
-      "Custom AI solutions, conversational AI, workflow automation, and full-stack product development for startups and growing companies.",
+      "Custom AI software, agents, and full-stack delivery for teams that need production-ready apps, APIs, and observability—not slideware.",
     type: "website",
     locale: "en_US",
   },

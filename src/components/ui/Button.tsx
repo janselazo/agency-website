@@ -14,6 +14,8 @@ interface ButtonProps {
   onClick?: () => void;
   /** Green “live” dot (Relink-style secondary CTA) */
   showLiveDot?: boolean;
+  target?: string;
+  rel?: string;
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -52,6 +54,8 @@ export default function Button({
   disabled = false,
   onClick,
   showLiveDot = false,
+  target,
+  rel,
 }: ButtonProps) {
   const baseStyles =
     "inline-flex items-center justify-center rounded-full font-semibold tracking-tight transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed";
@@ -66,7 +70,7 @@ export default function Button({
 
   if (href) {
     return (
-      <Link href={href} className={styles}>
+      <Link href={href} className={styles} target={target} rel={rel}>
         {inner}
       </Link>
     );

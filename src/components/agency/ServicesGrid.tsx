@@ -45,6 +45,15 @@ const iconMap: Record<string, React.ReactNode> = {
       />
     </svg>
   ),
+  store: (
+    <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-16.5 0V7.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v11.25m-17.25 0h3m-3 0h.008v.008H6V21Zm9.75 0h.008v.008h-.008V21Zm-9.75-3.75h3m-3 0h.008v.008H6v-.008Zm9.75 0h.008v.008h-.008v-.008Zm-9.75-3.75h3m-3 0h.008v.008H6v-.008Zm9.75 0h.008v.008h-.008v-.008Z"
+      />
+    </svg>
+  ),
 };
 
 /* Relink-style: white glyph on saturated circular badge */
@@ -63,8 +72,8 @@ export default function ServicesGrid() {
     <section className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
         label="Services"
-        title="Custom AI & software for real workflows"
-        description="From customer-facing assistants to internal copilots and automation—scoped for compliance, cost, and how your team actually works."
+        title="Custom AI software development"
+        description="Web apps, mobile, websites, ecommerce, and AI agents—prioritized for production quality, your stack, and how your team ships."
       />
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

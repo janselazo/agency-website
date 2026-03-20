@@ -4,14 +4,15 @@ import { motion } from "framer-motion";
 import { featuredProjects } from "@/lib/data";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
+import Button from "@/components/ui/Button";
 
 export default function FeaturedWork() {
   return (
     <section className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
       <SectionHeading
-        label="Work"
+        label="Featured case studies"
         title="Recent outcomes"
-        description="A sample of agency builds and studio products—focused on AI that ships and metrics that move."
+        description="A sample of client builds and studio products—AI software that shipped and metrics that moved."
       />
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -57,6 +58,12 @@ export default function FeaturedWork() {
             </Card>
           </motion.div>
         ))}
+      </div>
+
+      <div className="mt-12 flex justify-center">
+        <Button href="/case-studies" variant="secondary" size="lg" showLiveDot>
+          All case studies
+        </Button>
       </div>
     </section>
   );

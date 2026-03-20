@@ -10,7 +10,7 @@ import Badge from "@/components/ui/Badge";
 const typeFilters = [
   { id: "all", label: "All" },
   { id: "studio", label: "Studio" },
-  { id: "agency", label: "Agency" },
+  { id: "agency", label: "Client" },
 ] as const;
 
 const categoryFilters: { id: ProjectCategory | "all"; label: string }[] = [
@@ -44,9 +44,9 @@ export default function PortfolioGrid() {
   return (
     <section id="projects" className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
       <SectionHeading
-        label="Work"
-        title="Projects"
-        description="Studio products I operate and client work across AI agents, apps, and data."
+        label="Case studies"
+        title="Selected work"
+        description="Client builds and studio products—AI agents, apps, platforms, and automation."
       />
 
       <div className="mb-8 flex flex-wrap justify-center gap-2">
@@ -106,7 +106,7 @@ export default function PortfolioGrid() {
                           : "bg-accent-violet"
                       }`}
                     />
-                    {project.type}
+                    {project.type === "agency" ? "Client" : "Studio"}
                   </span>
                   <span className="rounded-full border border-border bg-surface px-2 py-0.5 text-[10px] font-medium text-text-secondary">
                     {categoryFilters.find((f) => f.id === project.category)

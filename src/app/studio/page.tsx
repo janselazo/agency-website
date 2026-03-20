@@ -1,21 +1,19 @@
 import type { Metadata } from "next";
 import StudioHero from "./StudioHero";
-import VenturesGrid from "@/components/studio/VenturesGrid";
-import Philosophy from "@/components/studio/Philosophy";
+import SoldToolsSection from "@/components/studio/SoldToolsSection";
 import CTASection from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "Studio",
+  title: "Studio — SoldTools",
   description:
-    "Janse Lazo Studio — I identify high-potential opportunities and build AI-powered products from the ground up.",
+    "SoldTools: a toolkit for car sales professionals—leads, appointments, and referrals. Sign in or talk to us about custom AI software.",
 };
 
 export default function StudioPage() {
   return (
     <>
       <StudioHero />
-      <VenturesGrid />
-      <Philosophy />
+      <SoldToolsSection />
       <CTASection />
     </>
   );

@@ -19,8 +19,8 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-text-secondary">
-              Custom AI software development—agents, chatbots, integrations,
-              and automation—for teams that need calm, maintainable systems.
+              Custom AI software development and AI agents—for web, mobile,
+              stores, and the workflows your team runs every day.
             </p>
           </div>
 
@@ -30,13 +30,13 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-2">
               {[
-                { label: "Agency", href: "/agency" },
-                { label: "Studio", href: "/studio" },
-                { label: "Portfolio", href: "/portfolio" },
-                { label: "Methodology", href: "/methodology" },
                 { label: "Services", href: "/services" },
+                { label: "Case Studies", href: "/case-studies" },
+                { label: "Studio", href: "/studio" },
+                { label: "Pricing", href: "/pricing" },
+                { label: "About me", href: "/about" },
                 { label: "Blog", href: "/blog" },
-                { label: "Contact", href: "/contact" },
+                { label: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <Link
                   key={link.href}
